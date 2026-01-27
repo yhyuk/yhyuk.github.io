@@ -54,7 +54,10 @@ const Projects = ({ onProjectClick }) => {
                 onClick={() => onProjectClick(project)}
               >
                 <div className="project-header">
-                  <h3>{project.title}</h3>
+                  <div className="project-title-group">
+                    <h3>{project.title}</h3>
+                    {project.subtitle && <div className="project-subtitle">{project.subtitle}</div>}
+                  </div>
                   <div className="project-badges">
                     <span className="project-year">{project.year}</span>
                     {project.type && Array.isArray(project.type) && project.type.map((type, index) => (

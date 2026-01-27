@@ -128,57 +128,100 @@
 .floating-icon {
   position: absolute;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   background: linear-gradient(135deg, rgba(168, 85, 247, 0.2), rgba(59, 130, 246, 0.2));
   border: 1px solid rgba(168, 85, 247, 0.3);
   border-radius: 16px;
   backdrop-filter: blur(10px);
-  font-size: 2rem;
   transition: all 0.3s ease;
+  gap: 4px;
+}
+
+.icon-emoji {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.icon-label {
+  font-size: 0.65rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 .floating-icon:hover {
   transform: scale(1.1);
   border-color: var(--accent-purple);
   box-shadow: 0 10px 30px rgba(168, 85, 247, 0.4);
+  animation-play-state: paused;
+  z-index: 10;
+}
+
+.floating-icon:hover .icon-label {
+  color: var(--accent-purple);
+}
+
+/* Tooltip */
+.floating-icon::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) translateY(5px);
+  background: rgba(13, 2, 33, 0.95);
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  border-radius: 8px;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.75rem;
+  color: var(--text-primary);
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.floating-icon:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
 }
 
 .floating-icon:nth-child(1) {
-  top: 10%;
-  left: 20%;
+  top: 15%;
+  left: 25%;
   animation: float 6s ease-in-out infinite;
 }
 
 .floating-icon:nth-child(2) {
-  top: 30%;
-  right: 10%;
+  top: 12%;
+  right: 15%;
   animation: float 7s ease-in-out infinite 1s;
 }
 
 .floating-icon:nth-child(3) {
-  top: 60%;
-  left: 10%;
+  top: 38%;
+  left: 12%;
   animation: float 8s ease-in-out infinite 2s;
 }
 
 .floating-icon:nth-child(4) {
-  top: 50%;
-  right: 25%;
+  top: 42%;
+  right: 22%;
   animation: float 7s ease-in-out infinite 1.5s;
 }
 
 .floating-icon:nth-child(5) {
-  bottom: 10%;
-  right: 15%;
+  top: 62%;
+  left: 22%;
   animation: float 6.5s ease-in-out infinite 0.5s;
 }
 
 .floating-icon:nth-child(6) {
-  top: 20%;
-  left: 50%;
+  top: 65%;
+  right: 18%;
   animation: float 7.5s ease-in-out infinite 2.5s;
 }
 

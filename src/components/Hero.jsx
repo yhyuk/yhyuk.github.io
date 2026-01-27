@@ -55,12 +55,30 @@ const Hero = () => {
             </div>
           </div>
           <div className="floating-icons">
-            <div className="floating-icon">☕</div>
-            <div className="floating-icon">🐳</div>
-            <div className="floating-icon">☁️</div>
-            <div className="floating-icon">🗄️</div>
-            <div className="floating-icon">⚙️</div>
-            <div className="floating-icon">🚀</div>
+            <div className="floating-icon" data-tooltip="Java & Spring 기반 서비스 설계">
+              <span className="icon-emoji">☕</span>
+              <span className="icon-label">Backend</span>
+            </div>
+            <div className="floating-icon" data-tooltip="Docker 컨테이너 환경 구축 및 CI/CD">
+              <span className="icon-emoji">🐳</span>
+              <span className="icon-label">DevOps</span>
+            </div>
+            <div className="floating-icon" data-tooltip="AWS, NCP 인프라 설계 및 운영">
+              <span className="icon-emoji">☁️</span>
+              <span className="icon-label">Cloud</span>
+            </div>
+            <div className="floating-icon" data-tooltip="데이터 모델링 및 쿼리 최적화">
+              <span className="icon-emoji">🗄️</span>
+              <span className="icon-label">Database</span>
+            </div>
+            <div className="floating-icon" data-tooltip="멀티 모듈 & MSA 아키텍처 설계">
+              <span className="icon-emoji">⚙️</span>
+              <span className="icon-label">Architecture</span>
+            </div>
+            <div className="floating-icon" data-tooltip="레거시 현대화부터 신규 서비스 런칭까지">
+              <span className="icon-emoji">🚀</span>
+              <span className="icon-label">Delivery</span>
+            </div>
           </div>
         </div>
       </div>
