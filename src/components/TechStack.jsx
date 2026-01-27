@@ -7,27 +7,27 @@ const TechStack = () => {
     {
       title: 'Backend',
       icon: '⚙️',
-      techs: ['Java', 'Spring Boot', 'Spring Security', 'JPA/Hibernate', 'QueryDSL', 'MyBatis']
+      techs: ['Java', 'Spring Boot', 'JPA/Hibernate', 'QueryDSL', 'MyBatis', 'Node.js']
     },
     {
       title: 'Frontend',
       icon: '🎨',
-      techs: ['React', 'JavaScript', 'HTML/CSS', 'Thymeleaf']
+      techs: ['React', 'Next', 'JavaScript', 'HTML/CSS', 'Thymeleaf']
     },
     {
       title: 'Database',
       icon: '🗄️',
-      techs: ['MySQL', 'PostgreSQL', 'Redis', 'MongoDB']
+      techs: ['MySQL', 'MariaDB', 'Oracle', 'H2', 'Redis', 'MongoDB']
     },
     {
       title: 'Cloud & Infrastructure',
       icon: '☁️',
-      techs: ['AWS (EC2, S3, RDS, Lambda)', 'Tencent Cloud', 'Docker', 'Nginx']
+      techs: ['AWS', 'NCP', 'Tencent Cloud', 'Docker', 'Nginx']
     },
     {
       title: 'DevOps & Tools',
       icon: '🔧',
-      techs: ['Git/GitHub', 'Jenkins', 'Prometheus', 'Grafana', 'k6', 'Postman']
+      techs: ['Git/GitHub', 'Bitbucket', 'Gitlab', 'Jenkins', 'Jira', 'Flex', 'Prometheus', 'Grafana', 'k6', 'Postman']
     }
   ];
 

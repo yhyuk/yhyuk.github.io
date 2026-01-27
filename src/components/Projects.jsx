@@ -66,24 +66,6 @@ const Projects = ({ onProjectClick }) => {
                 </div>
                 <div className="project-company">{project.company}</div>
                 <p className="project-desc">{project.description}</p>
-                <div className="project-tags">
-                  {project.tech.map((tech, index) => (
-                    <span key={index}>{tech}</span>
-                  ))}
-                </div>
-                {project.link === 'archived' ? (
-                  <div className="project-link archived">
-                    서비스 종료됨
-                  </div>
-                ) : project.link ? (
-                  <div className="project-link">
-                    자세히 보기 →
-                  </div>
-                ) : (
-                  <div className="project-link">
-                    자세히 보기 →
-                  </div>
-                )}
               </div>
             ))}
           </div>

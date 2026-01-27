@@ -111,7 +111,7 @@ export const projectsData = [
     id: 'archery',
     year: '2025',
     type: ['maintain', 'enhance'],
-    title: '대한양궁협회 공식 홈페이지 관리 시스템',
+    title: '대한양궁협회 공식 홈페이지',
     subtitle: '대회·선수·콘텐츠 통합 관리 백오피스 플랫폼',
     company: '대한양궁협회',
     period: '2025.03 - 진행 중',
