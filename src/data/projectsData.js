@@ -139,22 +139,46 @@ export const projectsData = [
     id: 'savezone',
     year: '2025',
     type: ['maintain'],
-    title: '세이브존 홈페이지',
+    title: '세이브존 공식 홈페이지',
+    subtitle: '세이브존 회원·매장 통합 관리 플랫폼',
     company: '세이브존(Savezone)',
-    period: '2025',
-    description: '유지보수 및 카카오 로그인 CI 누락 회원 데이터 복구 작업',
-    tech: ['Spring Boot', 'Kakao Login'],
+    period: '2025.01 - 진행 중',
+    description: '세이브존은 대형마트/할인점을 운영하는 유통 기업의 공식 홈페이지로, 회원 가입 및 관리, 매장 안내, 이벤트 운영, 고객 센터, IR 정보 제공 등을 통합적으로 관리하는 플랫폼입니다. Node.js LoopBack 기반의 백엔드 API와 React 기반의 프론트엔드로 구성되어 있으며, 마이크로서비스 아키텍처로 설계되어 인증, 고객 관리, 주문 처리, 이벤트 관리 등이 독립적으로 운영됩니다. 기존 시스템을 인수인계 받아 유지보수, 버그 수정 작업을 수행했습니다.',
+    tech: ['Node.js', 'Loopback', 'MongoDB', 'PM2', 'React', 'TypeScript', 'AWS'],
+    role: [
+      '시스템 유지보수 및 버그 개선',
+      '카카오 로그인 회원 데이터 복구 작업',
+      '카카오 로그인 처리 로직 보강'
+    ],
+    achievement: [
+      '시스템 안정성 향상',
+      '데이터 무결성 확보',
+      '카카오 로그인 안정성 강화'
+    ],
     link: 'https://esavezone.co.kr'
   },
   {
     id: 'savezone-event',
     year: '2025',
     type: ['new'],
-    title: '세이브존 이벤트 페이지',
+    title: '세이브존 이벤트 플랫폼',
+    subtitle: '지점별 맞춤형 이벤트 관리 시스템',
     company: '세이브존(Savezone)',
-    period: '2025',
-    description: '지점별 이벤트 컨텐츠 API 개발. 확률 기반 경품 추첨 및 중복·부정 사용 방지 로직',
-    tech: ['Java', 'Redis', 'Kakao Social'],
+    period: '2025.02 - 진행 중',
+    description: '세이브존 유통 매장의 지점별 맞춤형 이벤트를 운영하기 위한 통합 플랫폼입니다. Spring Boot 기반의 멀티 모듈 백엔드 API와 Nuxt3 기반의 관리자 대시보드로 구성되어 있으며, 룰렛, 스크래치, 공유왕 등 다양한 이벤트 콘텐츠를 제공합니다. 기존 Node.js기반 레거시 이벤트 시스템(로또, 운세, 세이브팜)을 Java로 전환하여 통합하면서 성능과 유지보수성을 개선했으며, Redis 기반 확률 추첨 로직을 구축하여 안정적인 이벤트 운영 환경을 제공했습니다.',
+    tech: ['Java 17', 'Spring Boot', 'Spring Data JPA', 'Redis', 'MariaDB', 'MongoDB', 'Nuxt.js', 'Vue', 'TypeScript', 'Swagger', 'Docker', 'NCP'],
+    role: [
+      '지점별 이벤트 콘텐츠 API 개발',
+      '레거시 시스템 Java 전환 및 구조 개선',
+      '카카오 소셜 로그인 연동 및 순위 시스템 구현',
+      '확률 기반 경품 추첨 시스템 구축',
+      '관리자 백오피스 개발'
+    ],
+    achievement: [
+      '레거시 시스템 현대화',
+      '확률 추첨 시스템 안정성 확보',
+      '지점별 맞춤형 이벤트 운영'
+    ],
     link: 'https://esavezone.co.kr/event-progress'
   },
   {
