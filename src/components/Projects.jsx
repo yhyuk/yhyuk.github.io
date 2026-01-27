@@ -5,16 +5,21 @@ import './Projects.css';
 
 const Projects = ({ onProjectClick }) => {
   const [selectedYear, setSelectedYear] = useState('all');
-  const [selectedCategory, setSelectedCategory] = useState('all');
   const [sectionRef, isVisible] = useScrollAnimation();
 
   const years = ['all', '2026', '2025', '2024', '2023', '2022', '2021'];
-  const categories = ['all', 'side'];
+
+  const getTypeLabel = (type) => {
+    const typeMap = {
+      new: '신규개발',
+      enhance: '기능확장',
+      maintain: '유지보수'
+    };
+    return typeMap[type] || '';
+  };
 
   const filteredProjects = projectsData.filter(project => {
-    const yearMatch = selectedYear === 'all' || project.year === selectedYear;
-    const categoryMatch = selectedCategory === 'all' || project.category === selectedCategory;
-    return yearMatch && categoryMatch;
+    return selectedYear === 'all' || project.year === selectedYear;
   });
 
   return (
@@ -28,7 +33,6 @@ const Projects = ({ onProjectClick }) => {
 
         <div className="projects-wrapper">
           <div className="filter-section">
-            <div className="filter-label">년도</div>
             <div className="project-filters">
               {years.map(year => (
                 <button
@@ -37,21 +41,6 @@ const Projects = ({ onProjectClick }) => {
                   onClick={() => setSelectedYear(year)}
                 >
                   {year === 'all' ? '전체' : year}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          <div className="filter-section">
-            <div className="filter-label">카테고리</div>
-            <div className="project-filters">
-              {categories.map(category => (
-                <button
-                  key={category}
-                  className={`filter-btn ${selectedCategory === category ? 'active' : ''}`}
-                  onClick={() => setSelectedCategory(category)}
-                >
-                  {category === 'all' ? '전체' : '사이드'}
                 </button>
               ))}
             </div>
@@ -66,7 +55,14 @@ const Projects = ({ onProjectClick }) => {
               >
                 <div className="project-header">
                   <h3>{project.title}</h3>
-                  <span className="project-year">{project.year}</span>
+                  <div className="project-badges">
+                    <span className="project-year">{project.year}</span>
+                    {project.type && Array.isArray(project.type) && project.type.map((type, index) => (
+                      <span key={index} className={`project-type ${type}`}>
+                        {getTypeLabel(type)}
+                      </span>
+                    ))}
+                  </div>
                 </div>
                 <div className="project-company">{project.company}</div>
                 <p className="project-desc">{project.description}</p>

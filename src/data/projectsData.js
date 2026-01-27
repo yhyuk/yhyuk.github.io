@@ -3,6 +3,7 @@ export const projectsData = [
   {
     id: 'gangnamunni',
     year: '2026',
+    type: ['new'],
     title: '강남언니 위챗 미니프로그램',
     company: '강남언니 x 위챗(WeChat)',
     period: '2026.01 - 진행 중',
@@ -26,6 +27,7 @@ export const projectsData = [
   {
     id: 'kia80',
     year: '2025',
+    type: ['new'],
     title: '기아 80주년 이벤트',
     company: '기아(KIA)',
     period: '2025.08 - 진행 중',
@@ -48,6 +50,7 @@ export const projectsData = [
   {
     id: 'hyundai',
     year: '2025',
+    type: ['maintain', 'enhance'],
     title: '현대 모빌리티 패스포트',
     company: '현대(Hyundai)',
     period: '2025.06 - 진행 중',
@@ -70,6 +73,7 @@ export const projectsData = [
   {
     id: 'miniprogram',
     year: '2025',
+    type: ['maintain', 'enhance'],
     title: '중국 앱 커머스 (미니파이)',
     company: '위챗(WeChat)',
     period: '2025',
@@ -80,6 +84,7 @@ export const projectsData = [
   {
     id: 'archery',
     year: '2025',
+    type: ['maintain', 'enhance'],
     title: '대한양궁협회 유지보수',
     company: '대한양궁협회',
     period: '2025',
@@ -90,6 +95,7 @@ export const projectsData = [
   {
     id: 'savezone',
     year: '2025',
+    type: ['maintain'],
     title: '세이브존 홈페이지',
     company: '세이브존(Savezone)',
     period: '2025',
@@ -100,6 +106,7 @@ export const projectsData = [
   {
     id: 'savezone-event',
     year: '2025',
+    type: ['new'],
     title: '세이브존 이벤트 페이지',
     company: '세이브존(Savezone)',
     period: '2025',
@@ -110,6 +117,7 @@ export const projectsData = [
   {
     id: 'luckyhotto',
     year: '2025',
+    type: ['new'],
     category: 'side',
     title: '행운의 호또',
     company: '개인 사이드 프로젝트',
@@ -121,6 +129,7 @@ export const projectsData = [
   {
     id: 'memorial',
     year: '2025',
+    type: ['new'],
     category: 'side',
     title: '온라인 분향소',
     company: '개인 사이드 프로젝트',
@@ -133,6 +142,7 @@ export const projectsData = [
   {
     id: 'linme',
     year: '2024',
+    type: ['new'],
     title: '건기식 개인화 커머스',
     company: '이노즈(Inroes)',
     period: '2023-2024',
@@ -156,6 +166,7 @@ export const projectsData = [
   {
     id: 'forloud',
     year: '2023',
+    type: ['new'],
     title: '브랜드 배송 관리 사이트',
     company: '포라우드(Forloud)',
     period: '2023',
@@ -166,6 +177,7 @@ export const projectsData = [
   {
     id: 'abiman',
     year: '2023',
+    type: ['new'],
     title: '아비만 모니터링 시스템',
     company: '아비만(Abiman)',
     period: '2023',
@@ -176,6 +188,7 @@ export const projectsData = [
   {
     id: 'unlike',
     year: '2023',
+    type: ['new'],
     title: '언라이크 소개 페이지',
     company: '언라이크(Un:like)',
     period: '2022-2023',
@@ -186,6 +199,7 @@ export const projectsData = [
   {
     id: 'doldol',
     year: '2023',
+    type: ['maintain', 'enhance'],
     title: '돌돌 화물 운송 서비스',
     company: '돌돌(DolDol)',
     period: '2022-2023',
@@ -197,6 +211,7 @@ export const projectsData = [
   {
     id: 'numo',
     year: '2022',
+    type: ['new'],
     title: '누모 GPS 트래킹',
     company: '누모(Numo)',
     period: '2021-2022',
