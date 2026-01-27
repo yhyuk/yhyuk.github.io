@@ -25,6 +25,7 @@ const ProjectModal = ({ project, onClose }) => {
 
         <div className="modal-header">
           <h2>{project.title}</h2>
+          {project.subtitle && <div className="modal-subtitle">{project.subtitle}</div>}
           <div className="modal-company">{project.company}</div>
           <div className="modal-period">{project.period}</div>
         </div>
