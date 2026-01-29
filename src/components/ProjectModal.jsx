@@ -68,7 +68,7 @@ const ProjectModal = ({ project, onClose }) => {
 
         {project.link && project.link !== 'archived' && (
           <a href={project.link} target="_blank" rel="noopener noreferrer" className="modal-link">
-            프로젝트 바로가기 →
+            서비스 바로가기 →
           </a>
         )}
         {project.link === 'archived' && (
