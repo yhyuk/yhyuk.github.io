@@ -59,7 +59,7 @@ export const projectsData = [
     id: 'hyundai',
     year: '2025',
     type: ['maintain', 'enhance'],
-    title: 'HMP (Hyundai Mobility Passport)',
+    title: 'H.M.P (Hyundai Mobility Passport)',
     subtitle: '오키나와·하와이 렌터카 예약 관리 시스템',
     company: '현대 (HYUNDAI)',
     period: '2025.07 - 진행 중',
@@ -84,7 +84,7 @@ export const projectsData = [
     id: 'miniprogram',
     year: '2025',
     type: ['maintain', 'enhance'],
-    title: 'MINIPIE (미니파이)',
+    title: '미니파이 (MINIPIE)',
     subtitle: 'K-POP 음반사 통합 커머스 위챗 미니프로그램 플랫폼',
     company: '위버스, 사운드웨이브, 메이크스타, 스타원',
     period: '2025.01 - 진행 중',
@@ -187,10 +187,24 @@ export const projectsData = [
     type: ['new'],
     category: 'side',
     title: '행운의 호또',
+    subtitle: '로또 번호 생성 및 익명 커뮤니티 서비스',
     company: '개인 사이드 프로젝트',
-    period: '2025',
-    description: '로또 추첨, 저장, 익명 커뮤니티 기능. 동행복권 API 연동',
+    period: '2025.01 ~ 2025.01',
+    description: '로또 번호 생성 및 저장, 익명 커뮤니티 기능을 제공하는 웹 서비스입니다. 동행복권 API를 연동하여 실시간 당첨번호 조회 기능을 제공하며, 사용자 간 소통을 위한 익명 게시판, 댓글, 좋아요 기능을 구현했습니다. Spring Boot 백엔드와 React 프론트엔드로 구성된 풀스택 프로젝트로, AWS Lightsail을 활용하여 저비용으로 인프라를 구축 및 운영했습니다.',
     tech: ['Spring Boot', 'JPA', 'React', 'AWS Lightsail'],
+    role: [
+      'Spring Boot 기반 백엔드 API 설계 및 개발',
+      'React 프론트엔드 UI 개발',
+      '동행복권 외부 API 연동',
+      'AWS Lightsail 인프라 구축 및 배포',
+      '익명 커뮤니티 시스템 설계 및 구현'
+    ],
+    achievement: [
+      '동행복권 API 연동으로 실시간 당첨번호 조회 시스템 구축',
+      '익명 게시판/댓글/좋아요 기능으로 사용자 참여형 커뮤니티 구현',
+      'AWS Lightsail 기반 저비용 인프라 운영',
+      '풀스택 1인 개발로 기획부터 배포까지 전 과정 수행'
+    ],
     link: 'archived'
   },
   {
@@ -199,10 +213,24 @@ export const projectsData = [
     type: ['new'],
     category: 'side',
     title: '온라인 분향소',
+    subtitle: '무안공항 참사 희생자 추모 플랫폼',
     company: '개인 사이드 프로젝트',
-    period: '2025',
-    description: '무안공항 참사 유가족을 위한 온라인 분향소. 익명 메시지 작성',
-    tech: ['Spring Kotlin', 'JPA', 'React'],
+    period: '2025.01 ~ 2025.01',
+    description: '무안공항 참사 희생자를 추모하기 위한 온라인 분향소 서비스입니다. 누구나 익명으로 추모 메시지를 작성하고 공유할 수 있는 기능을 제공합니다. Kotlin과 Spring Boot를 활용한 백엔드와 React 프론트엔드로 구성되어 있으며, 사회적 이슈에 빠르게 대응하여 기획부터 배포까지 단기간에 완료한 프로젝트입니다.',
+    tech: ['Spring Kotlin', 'JPA', 'React', 'AWS Lightsail'],
+    role: [
+      'Kotlin + Spring Boot 기반 백엔드 API 개발',
+      'React 프론트엔드 UI 개발',
+      'AWS Lightsail 인프라 구축 및 배포',
+      '익명 추모 메시지 시스템 설계 및 구현',
+      '데이터베이스 스키마 설계'
+    ],
+    achievement: [
+      'Kotlin 기반 Spring Boot 백엔드 구축 경험',
+      '익명 사용자 추모 게시글 시스템 구현',
+      '빠른 기획 및 개발로 사회적 이슈 대응',
+      '풀스택 1인 개발로 전체 서비스 구축'
+    ],
     link: 'archived'
   },
   // 2024
@@ -211,9 +239,10 @@ export const projectsData = [
     year: '2024',
     type: ['new'],
     title: '건기식 개인화 커머스',
+    subtitle: '건강기능식품 맞춤형 쇼핑몰 플랫폼',
     company: '이노즈(Inroes)',
-    period: '2023-2024',
-    description: '커머스 전 영역 DB 설계. 본인인증·결제·택배조회 등 서드파티 연동. AWS EC2 → ECS 전환으로 비용 절감',
+    period: '2023.09 ~ 2024.12',
+    description: '건강기능식품 맞춤형 추천 및 구매를 위한 커머스 플랫폼입니다. 커머스 전 영역의 데이터베이스 스키마를 초기 설계하고, 본인인증, PG 결제, 택배조회 등 다양한 서드파티 API를 연동했습니다. Spring Boot 백엔드와 React 프론트엔드로 구성되어 있으며, AWS EC2에서 ECS로 인프라를 전환하여 비용을 절감하고 배포 파이프라인을 구축했습니다.',
     tech: ['Spring Boot', 'React', 'AWS ECS', 'Redis', 'Payment'],
     role: [
       '커머스 전 영역 DB 스키마 초기 설계',
@@ -225,7 +254,7 @@ export const projectsData = [
     achievement: [
       'AWS EC2 → ECS 전환으로 월 인프라 비용 30% 절감',
       '와탭 모니터링으로 슬로우쿼리 개선 (3s → 1s)',
-      '0→1 커머스 플랫폼 성공적 런칭'
+      'Dev/Stg/Prod 환경 분리로 안정적인 배포 파이프라인 구축'
     ],
     link: 'archived'
   },
@@ -234,11 +263,23 @@ export const projectsData = [
     id: 'forloud',
     year: '2023',
     type: ['new'],
-    title: '브랜드 배송 관리 사이트',
+    title: '인플루언서 배송 관리 플랫폼',
+    subtitle: '엑셀 기반 구매자·배송 데이터 업로드/다운로드 시스템',
     company: '포라우드(Forloud)',
-    period: '2023',
-    description: 'Apache POI로 엑셀 업로드. QueryDSL로 검색/필터 쿼리 간소화',
+    period: '2023.05 ~ 2023.09',
+    description: '인플루언서가 구매자 및 배송 정보를 관리할 수 있는 웹 플랫폼입니다. Apache POI를 활용하여 엑셀 파일 업로드/다운로드 기능을 구현하고, QueryDSL을 적용하여 다양한 검색 및 필터 조건의 동적 쿼리를 간소화했습니다. Spring Boot와 JPA 기반으로 백엔드 API를 개발했습니다.',
     tech: ['Spring Boot', 'JPA', 'QueryDSL', 'Apache POI'],
+    role: [
+      'Spring Boot 기반 백엔드 API 설계 및 개발',
+      '프론트엔드 UI 개발',
+      'Apache POI 활용 엑셀 업로드/다운로드 기능 구현',
+      'QueryDSL 기반 동적 검색/필터 쿼리 개발',
+      '데이터베이스 설계'
+    ],
+    achievement: [
+      '엑셀 기반 대량 데이터 처리 시스템 구축',
+      'QueryDSL 적용으로 복잡한 검색 조건 쿼리 간소화'
+    ],
     link: null
   },
   {
@@ -246,10 +287,22 @@ export const projectsData = [
     year: '2023',
     type: ['new'],
     title: '아비만 모니터링 시스템',
+    subtitle: '스마트팩토리 실시간 현황 대시보드',
     company: '아비만(Abiman)',
-    period: '2023',
-    description: '스마트팩토링 총괄 모니터링. Next.js SSR, 실시간 그래프 연동',
+    period: '2023.01 ~ 2023.03',
+    description: '스마트팩토리 설비 및 생산 현황을 실시간으로 모니터링하는 대시보드 시스템입니다. Next.js SSR을 활용하여 초기 로딩 속도를 개선하고, 실시간 그래프 연동으로 생산 데이터를 시각화했습니다. Zustand와 React Query를 사용하여 상태 관리 및 서버 데이터 캐싱을 구현하고, AWS Amplify로 배포 환경을 구축했습니다.',
     tech: ['Next.js', 'Zustand', 'React Query', 'AWS Amplify'],
+    role: [
+      'Next.js 기반 프론트엔드 개발',
+      'SSR 적용 및 초기 로딩 성능 최적화',
+      '실시간 그래프 연동 및 데이터 시각화',
+      'Zustand 상태 관리 및 React Query 서버 데이터 캐싱 구현',
+      'AWS Amplify 배포 환경 구축'
+    ],
+    achievement: [
+      'SSR 적용으로 초기 로딩 속도 개선',
+      '실시간 생산 현황 모니터링 대시보드 구축'
+    ],
     link: null
   },
   {
@@ -257,10 +310,22 @@ export const projectsData = [
     year: '2023',
     type: ['new'],
     title: '언라이크 소개 페이지',
+    subtitle: '브랜드 홍보 및 서비스 소개 웹사이트',
     company: '언라이크(Un:like)',
-    period: '2022-2023',
-    description: 'React.js → Next.js 전환. SEO 최적화 및 Google Analytics 적용',
+    period: '2022.11 ~ 2023.01',
+    description: '언라이크 브랜드의 서비스 및 회사 정보를 소개하는 공식 웹사이트입니다. 기존 React.js 기반 프로젝트를 Next.js로 전환하여 SSR을 적용하고, 메타 태그 및 구조화된 데이터 설정으로 SEO를 최적화했습니다. Google Analytics를 연동하여 사용자 유입 및 행동 데이터를 분석할 수 있도록 구축했습니다.',
     tech: ['Next.js', 'SEO', 'QueryDSL'],
+    role: [
+      'React.js에서 Next.js로 프레임워크 전환',
+      'SSR 적용 및 SEO 최적화',
+      '메타 태그 및 구조화된 데이터 설정',
+      'Google Analytics 연동',
+      '관리자 백오피스 개발'
+    ],
+    achievement: [
+      'Next.js 전환으로 SEO 및 초기 로딩 성능 개선',
+      'Google Analytics 연동으로 사용자 행동 분석 환경 구축'
+    ],
     link: 'archived'
   },
   {
@@ -268,10 +333,23 @@ export const projectsData = [
     year: '2023',
     type: ['maintain', 'enhance'],
     title: '돌돌 화물 운송 서비스',
+    subtitle: '위치 기반 실시간 화물 매칭 플랫폼',
     company: '돌돌(DolDol)',
-    period: '2022-2023',
-    description: '위치기반 화물 운송. 실시간 푸시알림·문자발송. Spring Scheduler 주문 로직',
+    period: '2022.05 ~ 2023.05',
+    description: '화물 운송 의뢰자와 운송 기사를 매칭하는 위치 기반 물류 플랫폼입니다. 실시간 푸시 알림과 문자 발송 기능을 통해 운송 상태를 실시간으로 전달하고, Spring Scheduler를 활용하여 주문 처리 및 배차 로직을 자동화했습니다. Spring Boot 기반으로 백엔드 API를 개발하고 유지보수를 수행했습니다.',
     tech: ['Spring Boot', 'Location-based', 'Push Notification', 'SMS'],
+    role: [
+      '운송 의뢰자 앱 백엔드 API 설계 및 개발',
+      '운송 의뢰자용 관리자 웹 화면 개발',
+      '운송 기사용 관리자 웹 화면 개발',
+      '실시간 푸시 알림 및 문자 발송 기능 구현',
+      'Spring Scheduler 기반 주문 처리 및 배차 로직 개발'
+    ],
+    achievement: [
+      '운송 의뢰자 및 기사 양측 관리 시스템 구축',
+      '실시간 알림 시스템으로 운송 상태 추적 기능 구현',
+      'Spring Scheduler 활용 배차 자동화로 운영 효율성 향상'
+    ],
     link: 'https://doldol.net'
   },
   // 2022
@@ -279,13 +357,15 @@ export const projectsData = [
     id: 'numo',
     year: '2022',
     type: ['new'],
-    title: '누모 GPS 트래킹',
+    title: 'GPS 기반 실시간 트래킹 서비스',
+    subtitle: '킥보드 사용자 위치 기반 트래킹 앱',
     company: '누모(Numo)',
-    period: '2021-2022',
-    description: '멀티모듈 환경 구성. 실시간 위치 정보 Redis 처리. SNS 통합 로그인',
+    period: '2021.09 ~ 2022.08',
+    description: '킥보드 사용자를 위한 실시간 위치 추적 및 주행 기록 관리 앱의 백엔드 시스템입니다. Spring Boot 멀티모듈 아키텍처로 설계하여 코드 재사용성과 유지보수성을 높이고, Redis를 활용하여 실시간 위치 정보를 처리했습니다. JWT 기반 인증과 OAuth2.0 소셜 로그인을 구현하고, Firebase Cloud Messaging으로 푸시 알림 기능을 연동했습니다.',
     tech: ['Spring Boot Multi-module', 'Redis', 'JWT', 'OAuth', 'Firebase'],
     role: [
       'Spring Boot 멀티모듈 아키텍처 설계 및 구성',
+      '앱 연동 폴링 기반 실시간 위치 트래킹 API 개발',
       '실시간 위치 정보 Redis 기반 처리',
       'JWT 기반 인증 및 OAuth2.0 소셜 로그인 구현',
       'Firebase Cloud Messaging 푸시 알림 연동',
@@ -293,7 +373,7 @@ export const projectsData = [
     ],
     achievement: [
       '멀티모듈 구조로 코드 재사용성 및 유지보수성 향상',
-      '실시간 위치 추적 안정적 서비스 제공',
+      '폴링 기반 앱 통신으로 안정적인 실시간 위치 추적 서비스 구현',
       '소셜 로그인으로 사용자 편의성 개선'
     ],
     link: 'archived'

@@ -5,22 +5,26 @@ const Experience = () => {
   const [sectionRef, isVisible] = useScrollAnimation();
   const experiences = [
     {
-      company: '아이엠폼',
+      company: '아이엠폼 (IMFORM)',
       period: '2025.01 - 현재',
-      position: '시스템팀 풀스택 개발',
+      position: '시스템팀 · 백엔드, 프론트엔드',
       description: '웹 에이전시 · SI/SM 프로젝트',
       achievements: [
         '다수 고객사 웹 서비스 백엔드/프론트 유지보수 및 신규 요구사항 반영',
         '장애 재발 방지를 위한 원인분석과 후속 조치 표준화',
         '타사 인수인계 프로젝트 전면 리팩토링 주도',
-        'API 스펙 문서화 및 프로젝트 이슈 가이드 문서 작성'
+        'API 스펙 문서화 및 프로젝트 이슈 가이드 문서 작성',
+        'SSL 인증서 자동 갱신 시스템 구축으로 운영 효율화',
+        '백엔드 코딩 컨벤션 정립 및 팀 내 표준화 가이드 배포',
+        'SonarQube 도입으로 코드 품질 관리 체계 구축',
+        '레거시 프로젝트 현황 파악 및 운영/미운영 시스템 문서화'
       ],
       tech: ['Spring Boot', 'React', 'Redis', 'AWS', 'Tencent Cloud']
     },
     {
-      company: '이노즈',
+      company: '이노즈 (INROES)',
       period: '2023.09 - 2024.12',
-      position: '백엔드 개발',
+      position: '서버팀 · 백엔드',
       description: '건기식 커머스 서비스 회사',
       achievements: [
         'Dev/Stg/Prod 서버 아키텍처 구성 및 배포 파이프라인 설계',
@@ -33,7 +37,7 @@ const Experience = () => {
     {
       company: '프리랜서',
       period: '2023.05 - 2023.09',
-      position: '풀스택 개발',
+      position: '백엔드, 프론트엔드',
       description: '외주 프로젝트',
       achievements: [
         '백오피스 데이터 가공 및 API 개발',
@@ -43,9 +47,9 @@ const Experience = () => {
       tech: ['Spring Boot', 'React', 'MySQL', 'AWS']
     },
     {
-      company: '언라이크',
+      company: '언라이크 (UNLIKE)',
       period: '2021.09 - 2023.05',
-      position: '서버팀 풀스택 개발',
+      position: '서버팀 · 백엔드, 프론트엔드',
       description: '웹 에이전시 · SI 프로젝트',
       achievements: [
         '인프라 구축, API 개발 및 프론트엔드 신규 서비스 개발',
