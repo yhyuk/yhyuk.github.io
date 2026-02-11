@@ -16,7 +16,7 @@ const experiences = [
       '`SonarQube` 도입으로 코드 품질 관리 체계 구축',
       '레거시 프로젝트 현황 파악 및 운영/미운영 시스템 문서화'
     ],
-    tech: ['Spring Boot', 'React', 'MySQL', 'MongoDB', 'Redis', 'AWS', 'Tencent Cloud']
+    tech: []
   },
   {
     company: '이노즈 (INROES)',
@@ -32,7 +32,7 @@ const experiences = [
       '커머스 전 영역 `DB 초기 설계`',
       '`AWS EC2 → ECS` 전환으로 리소스 효율 및 비용 절감'
     ],
-    tech: ['Spring Boot', 'AWS ECS', 'Redis', 'MySQL']
+    tech: []
   },
   {
     company: '프리랜서',
@@ -44,7 +44,7 @@ const experiences = [
       '인프라 구축 및 배포환경 구성',
       '레거시 개편 및 서비스 장애 대응'
     ],
-    tech: ['Spring Boot', 'React', 'MySQL', 'AWS']
+    tech: []
   },
   {
     company: '언라이크 (UNLIKE)',
@@ -58,7 +58,7 @@ const experiences = [
       '`nGrinder` 성능테스트 도입으로 `SQL 튜닝` 및 코드 개선',
       '레거시 개편 및 서비스 장애 대응'
     ],
-    tech: ['Spring Boot', 'React', 'MySQL', 'Redis', 'AWS']
+    tech: []
   }
 ];
 
