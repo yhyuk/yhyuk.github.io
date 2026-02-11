@@ -1,80 +1,79 @@
-import { useState } from 'react';
 import { projectsData } from '../data/projectsData';
-import { useScrollAnimation } from '../hooks/useScrollAnimation';
-import './Projects.css';
+import { hl } from '../utils/highlight';
 
-const Projects = ({ onProjectClick }) => {
-  const [selectedYear, setSelectedYear] = useState('all');
-  const [sectionRef, isVisible] = useScrollAnimation();
+const badgeMap = {
+  new: { label: '신규개발', className: 'badge-new' },
+  maintain: { label: '유지보수', className: 'badge-maintain' },
+  enhance: { label: '기능확장', className: 'badge-enhance' }
+};
 
-  const years = ['all', '2026', '2025', '2024', '2023', '2022', '2021'];
-
-  const getTypeLabel = (type) => {
-    const typeMap = {
-      new: '신규개발',
-      enhance: '기능확장',
-      maintain: '유지보수'
-    };
-    return typeMap[type] || '';
-  };
-
-  const filteredProjects = projectsData.filter(project => {
-    return selectedYear === 'all' || project.year === selectedYear;
-  });
-
+const Projects = () => {
   return (
-    <section className="projects" id="projects" ref={sectionRef}>
-      <div className="container">
-        <div className={`section-header fade-in ${isVisible ? 'visible' : ''}`}>
-          <div className="section-number">02. PROJECTS</div>
-          <h2 className="section-title">All Projects</h2>
-          <p className="section-subtitle">참여한 모든 프로젝트입니다</p>
-        </div>
+    <div className="section">
+      <h2 className="section-title">Projects</h2>
 
-        <div className="projects-wrapper">
-          <div className="filter-section">
-            <div className="project-filters">
-              {years.map(year => (
-                <button
-                  key={year}
-                  className={`filter-btn ${selectedYear === year ? 'active' : ''}`}
-                  onClick={() => setSelectedYear(year)}
-                >
-                  {year === 'all' ? '전체' : year}
-                </button>
-              ))}
+      {projectsData.map((project) => (
+        <div key={project.id} className="project-item">
+          <div className="project-header">
+            <div>
+              <span className="project-title">{project.title}</span>
+              {project.category === 'side' ? (
+                <span className="badge badge-side">사이드</span>
+              ) : (
+                project.type?.map((type, i) => {
+                  const badge = badgeMap[type];
+                  return badge ? (
+                    <span key={i} className={`badge ${badge.className}`}>{badge.label}</span>
+                  ) : null;
+                })
+              )}
             </div>
+            <div className="project-meta">{project.period}</div>
           </div>
+          <div className="project-company">{project.company}</div>
+          <p className="project-desc">{hl(project.description)}</p>
 
-          <div className={`projects-grid fade-in ${isVisible ? 'visible' : ''}`}>
-            {filteredProjects.map(project => (
-              <div
-                key={project.id}
-                className="project-card"
-                onClick={() => onProjectClick(project)}
-              >
-                <div className="project-header">
-                  <div className="project-title-group">
-                    <h3>{project.title}</h3>
-                    {project.subtitle && <div className="project-subtitle">{project.subtitle}</div>}
-                  </div>
-                  <div className="project-badges">
-                    <span className="project-year">{project.year}</span>
-                    {project.type && Array.isArray(project.type) && project.type.map((type, index) => (
-                      <span key={index} className={`project-type ${type}`}>
-                        {getTypeLabel(type)}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-                <div className="project-company">{project.company}</div>
-                <p className="project-desc">{project.description}</p>
-              </div>
+          {project.role && project.role.length > 0 && (
+            <>
+              <div className="project-detail-title">주요 작업</div>
+              <ul className="project-list">
+                {project.role.map((item, i) => (
+                  <li key={i}>{hl(item)}</li>
+                ))}
+              </ul>
+            </>
+          )}
+
+          {project.achievement && project.achievement.length > 0 && (
+            <>
+              <div className="project-detail-title">성과</div>
+              <ul className="project-list">
+                {project.achievement.map((item, i) => (
+                  <li key={i}>{hl(item)}</li>
+                ))}
+              </ul>
+            </>
+          )}
+
+          <div className="project-tech">
+            {project.tech.map((t, i) => (
+              <span key={i}>{t}</span>
             ))}
           </div>
+
+          {project.link && project.link !== 'archived' && (
+            <a
+              className="project-link"
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {project.link}
+            </a>
+          )}
         </div>
-      </div>
-    </section>
+      ))}
+    </div>
   );
 };
 
