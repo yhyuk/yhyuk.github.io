@@ -16,7 +16,7 @@ const experiences = [
       '`SonarQube` 도입으로 코드 품질 관리 체계 구축',
       '레거시 프로젝트 현황 파악 및 운영/미운영 시스템 문서화'
     ],
-    tech: ['Spring Boot', 'React', 'Redis', 'AWS', 'Tencent Cloud']
+    tech: ['Spring Boot', 'React', 'MySQL', 'MongoDB', 'Redis', 'AWS', 'Tencent Cloud']
   },
   {
     company: '이노즈 (INROES)',
@@ -24,12 +24,15 @@ const experiences = [
     position: '서버팀 · 백엔드',
     description: '건기식 커머스 서비스 회사',
     achievements: [
+      '결제(KG이니시스), 본인인증(Danal, Popbill) 등 외부 서비스 연동 및 안정화',
+      '택배 추적, 안심번호, SMS 등 운영 필수 서비스 통합',
+      'OAuth 기반 SNS 로그인(Kakao, Naver, Facebook, Apple) 인증 시스템 구현',
       '`Dev/Stg/Prod` 서버 아키텍처 구성 및 배포 파이프라인 설계',
       '`와탭` 모니터링으로 슬로우쿼리 분석 및 최적화 (`3s → 1s`)',
       '커머스 전 영역 `DB 초기 설계`',
       '`AWS EC2 → ECS` 전환으로 리소스 효율 및 비용 절감'
     ],
-    tech: ['Spring Boot', 'React', 'AWS ECS', 'Redis', 'MySQL']
+    tech: ['Spring Boot', 'AWS ECS', 'Redis', 'MySQL']
   },
   {
     company: '프리랜서',
@@ -49,7 +52,9 @@ const experiences = [
     position: '서버팀 · 백엔드, 프론트엔드',
     description: '웹 에이전시 · SI 프로젝트',
     achievements: [
+      'RESTful API 설계 및 공통 응답 구조 표준화로 개발 생산성 및 유지보수성 개선',
       '인프라 구축, API 개발 및 프론트엔드 신규 서비스 개발',
+      '배포 과정에서 발생하는 이슈 해결 및 안정화 작업 수행',
       '`nGrinder` 성능테스트 도입으로 `SQL 튜닝` 및 코드 개선',
       '레거시 개편 및 서비스 장애 대응'
     ],

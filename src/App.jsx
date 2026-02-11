@@ -13,7 +13,7 @@ function App() {
       <Projects />
       <Skills />
       <Education />
-      <div className="footer">© 2025 김영혁</div>
+      <div className="footer">Latest Updated 2026. 02. 10</div>
     </div>
   );
 }
