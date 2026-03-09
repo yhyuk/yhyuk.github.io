@@ -3,10 +3,11 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   color: #222;
   background: #fff;
-  line-height: 1.7;
+  line-height: 1.65;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -35,13 +36,13 @@ code {
 }
 
 .profile h1 {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 700;
   letter-spacing: -0.5px;
 }
 
 .profile .role {
-  font-size: 18px;
+  font-size: 19px;
   color: #555;
   margin-top: 4px;
 }
@@ -90,7 +91,7 @@ code {
 }
 
 .section-title {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 700;
   margin-bottom: 32px;
   letter-spacing: -0.3px;
@@ -114,23 +115,23 @@ code {
 }
 
 .exp-company {
-  font-size: 20px;
+  font-size: 21px;
   font-weight: 700;
 }
 
 .exp-period {
-  font-size: 15px;
+  font-size: 16px;
   color: #888;
 }
 
 .exp-position {
-  font-size: 15px;
+  font-size: 16px;
   color: #555;
   margin-top: 2px;
 }
 
 .exp-desc {
-  font-size: 15px;
+  font-size: 16px;
   color: #888;
   margin-top: 2px;
 }
@@ -141,10 +142,10 @@ code {
 }
 
 .exp-list li {
-  font-size: 15px;
+  font-size: 16px;
   color: #444;
-  margin-bottom: 6px;
-  line-height: 1.7;
+  margin-bottom: 8px;
+  line-height: 1.65;
 }
 
 .exp-tech {
@@ -155,10 +156,10 @@ code {
 }
 
 .exp-tech span {
-  font-size: 13px;
+  font-size: 14px;
   color: #666;
   background: #f5f5f5;
-  padding: 2px 10px;
+  padding: 3px 12px;
   border-radius: 3px;
 }
 
@@ -184,34 +185,34 @@ code {
 }
 
 .project-title {
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 700;
 }
 
 .project-meta {
-  font-size: 15px;
+  font-size: 16px;
   color: #888;
 }
 
 .project-company {
-  font-size: 15px;
+  font-size: 16px;
   color: #555;
   margin-top: 2px;
 }
 
 .project-desc {
-  font-size: 15px;
+  font-size: 16px;
   color: #444;
   margin-top: 10px;
-  line-height: 1.8;
+  line-height: 1.75;
 }
 
 .project-detail-title {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
   color: #222;
   margin-top: 16px;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .project-list {
@@ -219,10 +220,10 @@ code {
 }
 
 .project-list li {
-  font-size: 15px;
+  font-size: 16px;
   color: #444;
-  margin-bottom: 4px;
-  line-height: 1.7;
+  margin-bottom: 6px;
+  line-height: 1.65;
 }
 
 .project-tech {
@@ -233,17 +234,17 @@ code {
 }
 
 .project-tech span {
-  font-size: 13px;
+  font-size: 14px;
   color: #666;
   background: #f5f5f5;
-  padding: 2px 10px;
+  padding: 3px 12px;
   border-radius: 3px;
 }
 
 .project-link {
   display: inline-block;
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 15px;
   color: #0066cc;
   text-decoration: none;
 }
@@ -254,9 +255,9 @@ code {
 
 .badge {
   display: inline-block;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
-  padding: 1px 8px;
+  padding: 2px 10px;
   border-radius: 3px;
   margin-left: 8px;
   vertical-align: middle;
@@ -277,16 +278,16 @@ code {
 }
 
 .skill-category {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   color: #222;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .skill-items {
-  font-size: 15px;
+  font-size: 16px;
   color: #444;
-  line-height: 1.8;
+  line-height: 1.75;
 }
 
 /* ── Education ── */
@@ -307,42 +308,51 @@ code {
 }
 
 .edu-school {
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 700;
 }
 
 .edu-period {
-  font-size: 15px;
+  font-size: 16px;
   color: #888;
 }
 
 .edu-major {
-  font-size: 15px;
+  font-size: 16px;
   color: #555;
   margin-top: 2px;
 }
 
 .edu-desc {
-  font-size: 14px;
+  font-size: 15px;
   color: #666;
   margin-top: 8px;
-  line-height: 1.8;
+  line-height: 1.75;
 }
 
 /* ── Footer ── */
 .footer {
   padding: 48px 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 15px;
   color: #aaa;
 }
 
 /* ── Responsive ── */
 @media (max-width: 600px) {
+  body { font-size: 15px; }
   .profile { padding: 48px 0 32px; }
-  .profile h1 { font-size: 28px; }
+  .profile h1 { font-size: 32px; }
+  .profile .role { font-size: 17px; }
   .section { padding: 36px 0; }
-  .section-title { font-size: 20px; margin-bottom: 24px; }
+  .section-title { font-size: 22px; margin-bottom: 24px; }
+  .exp-company, .edu-school { font-size: 18px; }
+  .project-title { font-size: 17px; }
+  .exp-period, .exp-position, .exp-desc,
+  .project-meta, .project-company, .project-desc,
+  .edu-period, .edu-major { font-size: 15px; }
+  .exp-list li, .project-list li, .skill-items { font-size: 15px; }
+  .exp-tech span, .project-tech span { font-size: 13px; }
   .skill-item { margin-bottom: 16px; }
   .exp-header, .project-header, .edu-header { flex-direction: column; gap: 2px; }
 }
