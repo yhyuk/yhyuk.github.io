@@ -36,7 +36,11 @@ const Skills = () => {
       {skillsData.map((skill, index) => (
         <div key={index} className="skill-item">
           <div className="skill-category">{skill.category}</div>
-          <div className="skill-items">{skill.items}</div>
+          <div className="skill-items">
+            {skill.items.split(', ').map((item, i) => (
+              <span key={i} className="skill-tag">{item}</span>
+            ))}
+          </div>
         </div>
       ))}
     </div>

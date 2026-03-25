@@ -159,7 +159,7 @@ code {
 .exp-item::before {
   content: '';
   position: absolute;
-  left: -37px;  /* 선 중앙 정렬: 선중심(9px) - 도트반경(6px) - padding(40px) = -37px */
+  left: -38px;  /* 타임라인 중앙 정렬 조정 */
   top: 4px;
   width: 12px;
   height: 12px;
@@ -390,7 +390,7 @@ code {
 
 /* ── Skills ── */
 .skill-item {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .skill-item:last-child {
@@ -401,13 +401,49 @@ code {
   font-size: 16px;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 8px;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 12px;
+}
+
+/* 카테고리 앞 포인트 */
+.skill-category::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  background: var(--primary);
+  border-radius: 50%;
 }
 
 .skill-items {
-  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* 스킬 태그 스타일 */
+.skill-tag {
+  display: inline-block;
+  padding: 6px 14px;
+  background: var(--bg-light);
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  font-size: 14px;
   color: var(--text-body);
-  line-height: 1.75;
+  transition: all 0.2s;
+  cursor: default;
+}
+
+.skill-tag:hover {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 102, 204, 0.2);
 }
 
 /* ── Education ── */
@@ -471,7 +507,8 @@ code {
   .exp-period, .exp-position, .exp-desc,
   .project-meta, .project-company, .project-desc,
   .edu-period, .edu-major { font-size: 15px; }
-  .exp-list li, .project-list li, .skill-items { font-size: 15px; }
+  .exp-list li, .project-list li { font-size: 15px; }
+  .skill-tag { font-size: 13px; padding: 5px 12px; }
   .exp-tech span, .project-tech span { font-size: 13px; }
   .skill-item { margin-bottom: 16px; }
   .exp-header, .project-header, .edu-header { flex-direction: column; gap: 2px; }
