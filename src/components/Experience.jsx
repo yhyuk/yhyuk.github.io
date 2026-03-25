@@ -67,8 +67,11 @@ const Experience = () => {
     <div className="section">
       <h2 className="section-title">Experience</h2>
 
-      {experiences.map((exp, index) => (
-        <div key={index} className="exp-item">
+      <div className="exp-timeline">
+        {experiences.map((exp, index) => (
+          <div
+            key={index}
+            className="exp-item">
           <div className="exp-header">
             <div className="exp-company">{exp.company}</div>
             <div className="exp-period">{exp.period}</div>
@@ -87,6 +90,7 @@ const Experience = () => {
           </div>
         </div>
       ))}
+      </div>
     </div>
   );
 };

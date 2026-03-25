@@ -1,0 +1,31 @@
+RALPH PROGRESS LOG
+==================
+Task: Fix Experience timeline circles (black background, center alignment)
+
+Iteration 1 - COMPLETED
+-----------------------
+Current state analysis:
+- Line position: left: 8px, width: 2px (center at 9px)
+- Circle position: left: -33px (incorrect calculation)
+- Circle size: 12px width with 2px border
+- Padding: 40px
+- Only first circle has black background, others are white
+
+Completed:
+✓ US-001: Changed all circles to black background (#222)
+  - Removed white background
+  - Removed first-child special styling
+✓ US-002: Repositioned circles to left: -37px for perfect center alignment
+  - Calculation: Line center at 9px, circle needs left edge at 3px (9px - 6px radius)
+  - From padding 40px: 3px - 40px = -37px
+✓ US-003: Hot reload working
+  - Vite HMR detected changes (3 updates logged)
+  - No errors in console
+
+ARCHITECT VERIFICATION: ✅ PASSED (STANDARD tier)
+- All acceptance criteria met
+- Mathematical calculations verified correct
+- Implementation is clean and maintainable
+
+Files changed:
+- src/styles/global.css (lines 128-139)

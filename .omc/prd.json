@@ -1,0 +1,42 @@
+{
+  "project": "portfolio-react-timeline-fix",
+  "description": "Fix Experience timeline circles to have black background and center alignment with timeline",
+  "stories": [
+    {
+      "id": "US-001",
+      "title": "Make all timeline circles have black background",
+      "priority": 1,
+      "acceptanceCriteria": [
+        "All .exp-item::before elements have background: #222",
+        "Remove white background (#fff) from circle styles",
+        "First-child special styling is no longer needed since all have same background",
+        "Visual verification shows all circles are black-filled"
+      ],
+      "passes": true
+    },
+    {
+      "id": "US-002",
+      "title": "Center timeline circles on the vertical line",
+      "priority": 2,
+      "acceptanceCriteria": [
+        "Calculate correct left position: line center is at 9px (left: 8px + width/2: 1px)",
+        "Circle center must align with line center: left position = -(40px - 9px + 6px) = -37px",
+        "Visual verification shows line passes through exact center of all circles",
+        "Math verification: circle left edge at -37px, circle center at -37px + 6px = -31px, which aligns with line at -40px + 9px = -31px"
+      ],
+      "passes": true
+    },
+    {
+      "id": "US-003",
+      "title": "Verify changes work with hot reload",
+      "priority": 3,
+      "acceptanceCriteria": [
+        "Vite HMR shows CSS update in console",
+        "Browser reflects changes without manual refresh",
+        "No CSS syntax errors in console",
+        "Development server remains stable"
+      ],
+      "passes": true
+    }
+  ]
+}
