@@ -319,7 +319,7 @@ code {
 }
 
 .project-list {
-  padding-left: 0;
+  padding-left: 20px;
   list-style: none;
 }
 
@@ -328,7 +328,12 @@ code {
   color: var(--text-body);
   margin-bottom: 6px;
   line-height: 1.65;
-  list-style: none;
+}
+
+.project-list li::before {
+  content: "- ";
+  margin-left: -20px;
+  padding-right: 8px;
 }
 
 .project-tech {
