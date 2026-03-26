@@ -319,7 +319,8 @@ code {
 }
 
 .project-list {
-  padding-left: 20px;
+  padding-left: 0;
+  list-style: none;
 }
 
 .project-list li {
@@ -327,6 +328,7 @@ code {
   color: var(--text-body);
   margin-bottom: 6px;
   line-height: 1.65;
+  list-style: none;
 }
 
 .project-tech {
