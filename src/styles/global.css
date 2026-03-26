@@ -142,7 +142,7 @@ code {
   top: 8px;
   bottom: 0;
   width: 2px;
-  background: linear-gradient(to bottom, var(--border-primary), var(--border-light));
+  background: linear-gradient(to bottom, var(--primary), rgba(0, 102, 204, 0.3));
 }
 
 .exp-item {
@@ -164,8 +164,8 @@ code {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: var(--border-primary);  /* 모든 동그라미 검은색 배경 */
-  border: 2px solid var(--border-primary);
+  background: var(--primary);  /* 파란색 배경 */
+  border: 2px solid var(--primary-dark);
   z-index: 1;
 }
 
@@ -203,6 +203,7 @@ code {
 .exp-list {
   margin-top: 12px;
   padding-left: 20px;
+  list-style: none;
 }
 
 .exp-list li {
@@ -210,6 +211,13 @@ code {
   color: var(--text-body);
   margin-bottom: 8px;
   line-height: 1.65;
+}
+
+.exp-list li::before {
+  content: "• ";
+  margin-left: -20px;
+  padding-right: 8px;
+  color: var(--primary);
 }
 
 .exp-tech {
@@ -301,12 +309,10 @@ code {
   color: var(--text-primary);
   margin-top: 20px;
   margin-bottom: 10px;
-  position: relative;
-  padding-left: 12px;
 }
 
-/* 상세 타이틀 앞 포인트 */
-.project-detail-title::before {
+/* 상세 타이틀 앞 포인트 제거 */
+/* .project-detail-title::before {
   content: '';
   position: absolute;
   left: 0;
@@ -316,7 +322,7 @@ code {
   height: 4px;
   background: var(--primary);
   border-radius: 50%;
-}
+} */
 
 .project-list {
   padding-left: 20px;
@@ -331,9 +337,10 @@ code {
 }
 
 .project-list li::before {
-  content: "- ";
+  content: "• ";
   margin-left: -20px;
   padding-right: 8px;
+  color: var(--primary);
 }
 
 .project-tech {
