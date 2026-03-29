@@ -13,7 +13,7 @@ const skillsData = [
   },
   {
     category: 'Cloud & Infrastructure',
-    items: 'AWS (EC2, ECS, S3, RDS, CloudFront, Lightsail, Amplify), Tencent Cloud (CLB, COS, TDSQL, CVM), Docker, Nginx'
+    items: 'AWS EC2, AWS ECS, AWS S3, AWS RDS, AWS CloudFront, AWS Lightsail, AWS Amplify, Tencent Cloud CLB, Tencent Cloud COS, Tencent Cloud TDSQL, Tencent Cloud CVM, Docker, Nginx'
   },
   {
     category: 'DevOps & Monitoring',
