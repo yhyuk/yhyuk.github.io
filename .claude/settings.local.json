@@ -4,7 +4,8 @@
       "mcp__plugin_oh-my-claudecode_t__state_read",
       "SlashCommand(/oh-my-claudecode:cancel)",
       "mcp__plugin_oh-my-claudecode_t__state_list_active",
-      "Bash(npm run dev)"
+      "Bash(npm run dev)",
+      "mcp__plugin_oh-my-claudecode_t__state_clear"
     ],
     "deny": [],
     "ask": []

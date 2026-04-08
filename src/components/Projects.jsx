@@ -15,7 +15,7 @@ const Projects = () => {
       {projectsData.map((project) => (
         <div key={project.id} className="project-item" data-category={project.category}>
           <div className="project-header">
-            <div>
+            <div className="project-title-row">
               <span className="project-title">{project.title}</span>
               {project.category === 'side' ? (
                 <span className="badge badge-side">사이드</span>

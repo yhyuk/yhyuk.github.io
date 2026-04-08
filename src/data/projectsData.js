@@ -1,6 +1,31 @@
 export const projectsData = [
   // 2026
   {
+    id: 'medicrm',
+    year: '2026',
+    type: ['new'],
+    title: 'Medical CRM',
+    subtitle: '병의원 중국인 고객 유치를 위한 위챗 미니프로그램 기반 구독형 B2B SaaS',
+    company: '아이엠폼 (IMFORM)',
+    period: '2026.02 - 진행 중',
+    description: '병의원이 중국인 고객을 유치하기 위해 병원 안내, 시술 정보, 후기, 케이스 스터디를 제공하는 위챗 미니 프로그램을 템플릿 형태로 관리하고, 해당 미니 프로그램을 통해 중국인 회원의 가입과 상담 접수 기능을 제공하는 `Medical CRM`을 개발하여 `구독형 B2B SaaS` 솔루션으로 제공합니다.',
+    tech: ['Java 21', 'Spring Boot 3.3', 'Spring Security', 'JPA', 'QueryDSL', 'WebFlux', 'MySQL', 'Redis', 'Docker', 'WeChat API', 'Paystory'],
+    role: [
+      '멀티 테넌트 기반 CRM 플랫폼 설계 및 7개 모듈 멀티 모듈 아키텍처 구현 (`Row-level 데이터 격리`)',
+      '위챗 미니 프로그램 백엔드 API 개발 (`OAuth 인증`, 시술 조회, 상담 접수, 회원 관리)',
+      '병원 관리자 CRM 개발 (대시보드, 시술/후기/케이스 관리, 상담 처리)',
+      '`Paystory` 결제 연동 기반 구독 빌링 시스템 구축 (자동 청구서 생성, 정기결제, 환불)',
+      '`Docker` 멀티 리전 배포(서울/상해) 및 CI/CD 파이프라인 구성'
+    ],
+    achievement: [
+      '7개 모듈, 29개 테이블, `70+ API 엔드포인트` 규모의 SaaS 플랫폼 구축',
+      '스케줄러를 통한 청구서 생성/결제 자동화로 `수동 운영 작업 제거`',
+      '`Flyway` 마이그레이션, `SonarQube` 도입으로 코드 품질 관리 체계 확립',
+      '5개 외부 시스템 연동 (`WeChat API`, `Paystory`, NCP SMS/Email, `Tencent COS`)'
+    ],
+    link: null
+  },
+  {
     id: 'gangnamunni',
     year: '2026',
     type: ['new'],

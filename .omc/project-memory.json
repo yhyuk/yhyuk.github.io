@@ -1,0 +1,166 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1775632620643,
+  "projectRoot": "/Users/imform-mm-2101/workspace/PERSONAL/portfolio-react",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "react",
+        "version": "19.2.0",
+        "category": "frontend"
+      },
+      {
+        "name": "react-dom",
+        "version": "19.2.0",
+        "category": "frontend"
+      },
+      {
+        "name": "vite",
+        "version": "7.2.4",
+        "category": "build"
+      }
+    ],
+    "packageManager": "npm",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": "npm run build",
+    "testCommand": null,
+    "lintCommand": "npm run lint",
+    "devCommand": "npm run dev",
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "lint": "eslint .",
+      "preview": "vite preview",
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d dist"
+    }
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": "type-based"
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "src"
+    ],
+    "gitBranches": {
+      "defaultBranch": "master",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "dist": {
+      "path": "dist",
+      "purpose": "Distribution/build output",
+      "fileCount": 1,
+      "lastAccessed": 1775632620605,
+      "keyFiles": [
+        "index.html"
+      ]
+    },
+    "src": {
+      "path": "src",
+      "purpose": "Source code",
+      "fileCount": 5,
+      "lastAccessed": 1775632620606,
+      "keyFiles": [
+        "App.css",
+        "App.jsx",
+        "index.css",
+        "main.jsx"
+      ]
+    },
+    "dist/assets": {
+      "path": "dist/assets",
+      "purpose": "Static assets",
+      "fileCount": 2,
+      "lastAccessed": 1775632620624,
+      "keyFiles": [
+        "index-B4azWV2I.js",
+        "index-C1QDBmbJ.css"
+      ]
+    },
+    "src/assets": {
+      "path": "src/assets",
+      "purpose": "Static assets",
+      "fileCount": 1,
+      "lastAccessed": 1775632620627,
+      "keyFiles": [
+        "react.svg"
+      ]
+    },
+    "src/components": {
+      "path": "src/components",
+      "purpose": "UI components",
+      "fileCount": 5,
+      "lastAccessed": 1775632620633,
+      "keyFiles": [
+        "Education.jsx",
+        "Experience.jsx",
+        "Profile.jsx"
+      ]
+    },
+    "src/data": {
+      "path": "src/data",
+      "purpose": "Data files",
+      "fileCount": 1,
+      "lastAccessed": 1775632620636,
+      "keyFiles": [
+        "projectsData.js"
+      ]
+    },
+    "src/utils": {
+      "path": "src/utils",
+      "purpose": "Utility functions",
+      "fileCount": 1,
+      "lastAccessed": 1775632620640,
+      "keyFiles": [
+        "highlight.jsx"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "src/data/projectsData.js",
+      "accessCount": 10,
+      "lastAccessed": 1775634095575,
+      "type": "file"
+    },
+    {
+      "path": "src/components/Projects.jsx",
+      "accessCount": 4,
+      "lastAccessed": 1775633879682,
+      "type": "file"
+    },
+    {
+      "path": "src/styles/global.css",
+      "accessCount": 3,
+      "lastAccessed": 1775633894007,
+      "type": "file"
+    },
+    {
+      "path": "src/App.jsx",
+      "accessCount": 1,
+      "lastAccessed": 1775633389753,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

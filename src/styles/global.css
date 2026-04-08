@@ -279,10 +279,16 @@ code {
   gap: 8px;
 }
 
+.project-title-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
 .project-title {
   font-size: 19px;
   font-weight: 700;
-  margin-right: 8px;
 }
 
 .project-meta {
@@ -376,7 +382,6 @@ code {
   font-weight: 600;
   padding: 3px 10px;
   border-radius: 12px;
-  margin-left: 6px;
   vertical-align: middle;
   letter-spacing: 0.3px;
 }
