@@ -423,43 +423,30 @@ code {
   margin-bottom: 0;
 }
 
-.ai-items {
-  position: relative;
-  padding-left: 40px;
-}
-
-/* 타임라인 세로 줄 - Experience와 동일 패턴 */
-.ai-items::before {
-  content: '';
-  position: absolute;
-  left: 8px;
-  top: 8px;
-  bottom: 0;
-  width: 2px;
-  background: linear-gradient(to bottom, var(--primary), rgba(0, 102, 204, 0.3));
-}
-
 .ai-item {
-  position: relative;
-  margin-bottom: 40px;
+  display: flex;
+  gap: 20px;
+  padding: 28px 0;
+  border-top: 1px solid var(--border-light);
 }
 
 .ai-item:last-child {
-  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
-/* 타임라인 도트 */
-.ai-item::before {
-  content: '';
-  position: absolute;
-  left: -38px;
-  top: 4px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: var(--primary);
-  border: 2px solid var(--primary-dark);
-  z-index: 1;
+.ai-item-number {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1;
+  flex-shrink: 0;
+  opacity: 0.35;
+  letter-spacing: -1px;
+}
+
+.ai-item-content {
+  flex: 1;
+  min-width: 0;
 }
 
 .ai-item-title {
@@ -634,6 +621,8 @@ code {
   .exp-tech span, .project-tech span { font-size: 13px; }
   .skill-item { margin-bottom: 16px; }
   .exp-header, .project-header, .edu-header { flex-direction: column; gap: 2px; }
+  .ai-item { gap: 14px; }
+  .ai-item-number { font-size: 26px; }
   .ai-item-title { font-size: 17px; }
   .ai-item-desc, .ai-item-list li { font-size: 15px; }
   .ai-item-tags span { font-size: 13px; }

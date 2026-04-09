@@ -64,17 +64,20 @@ const AiDevelopment = () => {
       <div className="ai-items">
         {aiItems.map((item, i) => (
           <div key={i} className="ai-item">
-            <div className="ai-item-title">{item.title}</div>
-            <p className="ai-item-desc">{hl(item.description)}</p>
-            <ul className="ai-item-list">
-              {item.details.map((d, j) => (
-                <li key={j}>{hl(d)}</li>
-              ))}
-            </ul>
-            <div className="ai-item-tags">
-              {item.tags.map((tag, j) => (
-                <span key={j}>{tag}</span>
-              ))}
+            <div className="ai-item-number">{String(i + 1).padStart(2, '0')}</div>
+            <div className="ai-item-content">
+              <div className="ai-item-title">{item.title}</div>
+              <p className="ai-item-desc">{hl(item.description)}</p>
+              <ul className="ai-item-list">
+                {item.details.map((d, j) => (
+                  <li key={j}>{hl(d)}</li>
+                ))}
+              </ul>
+              <div className="ai-item-tags">
+                {item.tags.map((tag, j) => (
+                  <span key={j}>{tag}</span>
+                ))}
+              </div>
             </div>
           </div>
         ))}

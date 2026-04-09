@@ -145,8 +145,8 @@
     },
     {
       "path": "src/styles/global.css",
-      "accessCount": 10,
-      "lastAccessed": 1775712851352,
+      "accessCount": 12,
+      "lastAccessed": 1775713293848,
       "type": "file"
     },
     {
@@ -174,15 +174,15 @@
       "type": "file"
     },
     {
-      "path": "src/components/Profile.jsx",
-      "accessCount": 2,
-      "lastAccessed": 1775712778292,
+      "path": "src/components/AiDevelopment.jsx",
+      "accessCount": 3,
+      "lastAccessed": 1775713262077,
       "type": "file"
     },
     {
-      "path": "src/components/AiDevelopment.jsx",
+      "path": "src/components/Profile.jsx",
       "accessCount": 2,
-      "lastAccessed": 1775712820669,
+      "lastAccessed": 1775712778292,
       "type": "file"
     },
     {
