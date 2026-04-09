@@ -1,7 +1,7 @@
 {
-  "tool_name": "Read",
-  "tool_input_preview": "{\"file_path\":\"/Users/imform-mm-2101/workspace/PERSONAL/portfolio-react/src/data/projectsData.js\"}",
-  "error": "File content (10343 tokens) exceeds maximum allowed tokens (10000). Use offset and limit parameters to read specific portions of the file, or search for specific content instead of reading the whole file.",
-  "timestamp": "2026-04-08T08:18:34.575Z",
+  "tool_name": "WebFetch",
+  "tool_input_preview": "{\"url\":\"http://localhost:5173/\",\"prompt\":\"현재 페이지의 전체 구조와 AI-Powered Development 섹션이 어떻게 보이는지 상세히 설명해줘. 특히 다른 섹션들과의 톤 차이가 있는지 분석해줘.\"}",
+  "error": "Invalid URL",
+  "timestamp": "2026-04-09T05:32:50.355Z",
   "retry_count": 1
 }

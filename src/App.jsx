@@ -1,5 +1,6 @@
 import Profile from './components/Profile';
 import Experience from './components/Experience';
+import AiDevelopment from './components/AiDevelopment';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Education from './components/Education';
@@ -10,6 +11,7 @@ function App() {
     <div className="container">
       <Profile />
       <Experience />
+      <AiDevelopment />
       <Projects />
       <Skills />
       <Education />

@@ -139,26 +139,104 @@
   "hotPaths": [
     {
       "path": "src/data/projectsData.js",
-      "accessCount": 13,
-      "lastAccessed": 1775636387452,
-      "type": "file"
-    },
-    {
-      "path": "src/components/Projects.jsx",
-      "accessCount": 4,
-      "lastAccessed": 1775633879682,
+      "accessCount": 16,
+      "lastAccessed": 1775711273590,
       "type": "file"
     },
     {
       "path": "src/styles/global.css",
-      "accessCount": 3,
-      "lastAccessed": 1775633894007,
+      "accessCount": 10,
+      "lastAccessed": 1775712851352,
       "type": "file"
     },
     {
+      "path": "src/components/Projects.jsx",
+      "accessCount": 7,
+      "lastAccessed": 1775711473235,
+      "type": "file"
+    },
+    {
+      "path": "",
+      "accessCount": 5,
+      "lastAccessed": 1775711247289,
+      "type": "directory"
+    },
+    {
       "path": "src/App.jsx",
+      "accessCount": 4,
+      "lastAccessed": 1775711598126,
+      "type": "file"
+    },
+    {
+      "path": "src/components/Experience.jsx",
+      "accessCount": 3,
+      "lastAccessed": 1775711472412,
+      "type": "file"
+    },
+    {
+      "path": "src/components/Profile.jsx",
+      "accessCount": 2,
+      "lastAccessed": 1775712778292,
+      "type": "file"
+    },
+    {
+      "path": "src/components/AiDevelopment.jsx",
+      "accessCount": 2,
+      "lastAccessed": 1775712820669,
+      "type": "file"
+    },
+    {
+      "path": ".claude/settings.local.json",
       "accessCount": 1,
-      "lastAccessed": 1775633389753,
+      "lastAccessed": 1775707940254,
+      "type": "file"
+    },
+    {
+      "path": "package.json",
+      "accessCount": 1,
+      "lastAccessed": 1775711247137,
+      "type": "file"
+    },
+    {
+      "path": "src/main.jsx",
+      "accessCount": 1,
+      "lastAccessed": 1775711251274,
+      "type": "file"
+    },
+    {
+      "path": "src/index.css",
+      "accessCount": 1,
+      "lastAccessed": 1775711251808,
+      "type": "file"
+    },
+    {
+      "path": "src/App.css",
+      "accessCount": 1,
+      "lastAccessed": 1775711252346,
+      "type": "file"
+    },
+    {
+      "path": "src/components/Skills.jsx",
+      "accessCount": 1,
+      "lastAccessed": 1775711259414,
+      "type": "file"
+    },
+    {
+      "path": "src/components/Education.jsx",
+      "accessCount": 1,
+      "lastAccessed": 1775711259608,
+      "type": "file"
+    },
+    {
+      "path": "src/utils/highlight.jsx",
+      "accessCount": 1,
+      "lastAccessed": 1775711265107,
+      "type": "file"
+    },
+    {
+      "path": "index.html",
+      "accessCount": 1,
+      "lastAccessed": 1775711281245,
       "type": "file"
     }
   ],

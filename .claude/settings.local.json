@@ -5,7 +5,11 @@
       "SlashCommand(/oh-my-claudecode:cancel)",
       "mcp__plugin_oh-my-claudecode_t__state_list_active",
       "Bash(npm run dev)",
-      "mcp__plugin_oh-my-claudecode_t__state_clear"
+      "mcp__plugin_oh-my-claudecode_t__state_clear",
+      "Bash(cat /Users/imform-mm-2101/.claude/plugins/cache/oh-my-claudecode/oh-my-claudecode/*/mcp-config.json)",
+      "Bash(cat /Users/imform-mm-2101/.claude/plugins/cache/thedotmack/claude-mem/*/package.json)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\('Total startups:', d.get\\('numStartups','N/A'\\)\\)\")",
+      "WebFetch(domain:localhost)"
     ],
     "deny": [],
     "ask": []

@@ -407,6 +407,109 @@ code {
   border: 1px solid #d9bfff;
 }
 
+/* ── AI Development ── */
+.ai-summary {
+  margin-bottom: 32px;
+}
+
+.ai-summary p {
+  font-size: 16px;
+  color: var(--text-body);
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+.ai-summary p:last-child {
+  margin-bottom: 0;
+}
+
+.ai-items {
+  position: relative;
+  padding-left: 40px;
+}
+
+/* 타임라인 세로 줄 - Experience와 동일 패턴 */
+.ai-items::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--primary), rgba(0, 102, 204, 0.3));
+}
+
+.ai-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.ai-item:last-child {
+  margin-bottom: 0;
+}
+
+/* 타임라인 도트 */
+.ai-item::before {
+  content: '';
+  position: absolute;
+  left: -38px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--primary);
+  border: 2px solid var(--primary-dark);
+  z-index: 1;
+}
+
+.ai-item-title {
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.ai-item-desc {
+  font-size: 16px;
+  color: var(--text-body);
+  margin-top: 8px;
+  line-height: 1.75;
+}
+
+.ai-item-list {
+  margin-top: 12px;
+  padding-left: 20px;
+  list-style: none;
+}
+
+.ai-item-list li {
+  font-size: 16px;
+  color: var(--text-body);
+  margin-bottom: 8px;
+  line-height: 1.65;
+}
+
+.ai-item-list li::before {
+  content: "• ";
+  margin-left: -20px;
+  padding-right: 8px;
+  color: var(--primary);
+}
+
+.ai-item-tags {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.ai-item-tags span {
+  font-size: 14px;
+  color: #666;
+  background: #f5f5f5;
+  padding: 3px 12px;
+  border-radius: 3px;
+}
+
 /* ── Skills ── */
 .skill-item {
   margin-bottom: 24px;
@@ -531,4 +634,7 @@ code {
   .exp-tech span, .project-tech span { font-size: 13px; }
   .skill-item { margin-bottom: 16px; }
   .exp-header, .project-header, .edu-header { flex-direction: column; gap: 2px; }
+  .ai-item-title { font-size: 17px; }
+  .ai-item-desc, .ai-item-list li { font-size: 15px; }
+  .ai-item-tags span { font-size: 13px; }
 }
