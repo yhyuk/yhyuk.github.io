@@ -423,6 +423,133 @@ code {
   margin-bottom: 0;
 }
 
+.ai-subtitle {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  padding-left: 12px;
+  position: relative;
+  letter-spacing: -0.2px;
+}
+
+.ai-subtitle::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  background: var(--primary);
+  border-radius: 50%;
+}
+
+/* ── Plugins ── */
+.ai-plugins {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.ai-plugin {
+  position: relative;
+  padding: 20px 20px 20px 24px;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.ai-plugin::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 12px;
+  bottom: 12px;
+  width: 3px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+.ai-plugin:hover {
+  border-color: var(--accent);
+  box-shadow: 0 2px 12px rgba(0, 168, 107, 0.08);
+}
+
+.ai-plugin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.ai-plugin-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+}
+
+.ai-plugin-tech {
+  font-size: 12px;
+  color: var(--text-muted);
+  background: var(--bg-light);
+  padding: 2px 8px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.ai-plugin-desc {
+  font-size: 14px;
+  color: var(--text-body);
+  margin-top: 8px;
+  line-height: 1.6;
+}
+
+.ai-plugin-detail {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 4px;
+  line-height: 1.5;
+}
+
+.ai-plugin-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 12px;
+  gap: 8px;
+}
+
+.ai-plugin-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.ai-plugin-tags span {
+  font-size: 12px;
+  color: #666;
+  background: #f5f5f5;
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+
+.ai-plugin-link {
+  font-size: 13px;
+  color: var(--accent);
+  text-decoration: none;
+  flex-shrink: 0;
+  font-weight: 600;
+}
+
+.ai-plugin-link:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+/* ── Workflow Items ── */
 .ai-item {
   display: flex;
   gap: 20px;
@@ -440,7 +567,6 @@ code {
   color: var(--primary);
   line-height: 1;
   flex-shrink: 0;
-  opacity: 0.35;
   letter-spacing: -1px;
 }
 
@@ -621,6 +747,12 @@ code {
   .exp-tech span, .project-tech span { font-size: 13px; }
   .skill-item { margin-bottom: 16px; }
   .exp-header, .project-header, .edu-header { flex-direction: column; gap: 2px; }
+  .ai-plugins { grid-template-columns: 1fr; }
+  .ai-plugin { padding: 16px 16px 16px 20px; }
+  .ai-plugin-name { font-size: 14px; }
+  .ai-plugin-desc { font-size: 13px; }
+  .ai-plugin-detail { font-size: 12px; }
+  .ai-plugin-tags span { font-size: 11px; }
   .ai-item { gap: 14px; }
   .ai-item-number { font-size: 26px; }
   .ai-item-title { font-size: 17px; }
