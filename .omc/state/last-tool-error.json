@@ -1,7 +1,7 @@
 {
   "tool_name": "Read",
-  "tool_input_preview": "{\"file_path\":\"/Users/imform-mm-2101/workspace/PERSONAL/portfolio-react/src/components/AiDevelopment.css\"}",
-  "error": "File does not exist. Note: your current working directory is /Users/imform-mm-2101/workspace/PERSONAL/portfolio-react. Did you mean AiDevelopment.jsx?",
-  "timestamp": "2026-04-10T05:25:07.046Z",
-  "retry_count": 2
+  "tool_input_preview": "{\"file_path\":\"/Users/imform-mm-2101/workspace/PERSONAL/portfolio-react/src/data/projectsData.js\"}",
+  "error": "File content (10531 tokens) exceeds maximum allowed tokens (10000). Use offset and limit parameters to read specific portions of the file, or search for specific content instead of reading the whole file.",
+  "timestamp": "2026-04-13T00:27:25.233Z",
+  "retry_count": 1
 }

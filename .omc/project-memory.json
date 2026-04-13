@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1775798534638,
+  "lastScanned": 1776039936235,
   "projectRoot": "/Users/imform-mm-2101/workspace/PERSONAL/portfolio-react",
   "techStack": {
     "languages": [
@@ -70,7 +70,7 @@
       "path": "dist",
       "purpose": "Distribution/build output",
       "fileCount": 1,
-      "lastAccessed": 1775798534536,
+      "lastAccessed": 1776039936208,
       "keyFiles": [
         "index.html"
       ]
@@ -79,7 +79,7 @@
       "path": "src",
       "purpose": "Source code",
       "fileCount": 5,
-      "lastAccessed": 1775798534538,
+      "lastAccessed": 1776039936209,
       "keyFiles": [
         "App.css",
         "App.jsx",
@@ -91,17 +91,17 @@
       "path": "dist/assets",
       "purpose": "Static assets",
       "fileCount": 2,
-      "lastAccessed": 1775798534580,
+      "lastAccessed": 1776039936223,
       "keyFiles": [
-        "index-BU62bne6.css",
-        "index-DGe_Sd4i.js"
+        "index-BF186lwh.css",
+        "index-D42J6cle.js"
       ]
     },
     "src/assets": {
       "path": "src/assets",
       "purpose": "Static assets",
       "fileCount": 1,
-      "lastAccessed": 1775798534581,
+      "lastAccessed": 1776039936224,
       "keyFiles": [
         "react.svg"
       ]
@@ -110,7 +110,7 @@
       "path": "src/components",
       "purpose": "UI components",
       "fileCount": 6,
-      "lastAccessed": 1775798534584,
+      "lastAccessed": 1776039936226,
       "keyFiles": [
         "AiDevelopment.jsx",
         "Education.jsx",
@@ -121,7 +121,7 @@
       "path": "src/data",
       "purpose": "Data files",
       "fileCount": 1,
-      "lastAccessed": 1775798534590,
+      "lastAccessed": 1776039936226,
       "keyFiles": [
         "projectsData.js"
       ]
@@ -130,7 +130,7 @@
       "path": "src/utils",
       "purpose": "Utility functions",
       "fileCount": 1,
-      "lastAccessed": 1775798534628,
+      "lastAccessed": 1776039936227,
       "keyFiles": [
         "highlight.jsx"
       ]
@@ -138,94 +138,34 @@
   },
   "hotPaths": [
     {
-      "path": "src/styles/global.css",
-      "accessCount": 9,
-      "lastAccessed": 1775802664166,
-      "type": "file"
-    },
-    {
-      "path": "src/components/AiDevelopment.jsx",
-      "accessCount": 5,
-      "lastAccessed": 1775804973396,
-      "type": "file"
-    },
-    {
-      "path": "src",
-      "accessCount": 3,
-      "lastAccessed": 1775798645419,
-      "type": "directory"
-    },
-    {
-      "path": "",
-      "accessCount": 3,
-      "lastAccessed": 1775798712066,
-      "type": "directory"
-    },
-    {
-      "path": "src/App.jsx",
-      "accessCount": 2,
-      "lastAccessed": 1775798733102,
-      "type": "file"
-    },
-    {
       "path": "src/data/projectsData.js",
-      "accessCount": 1,
-      "lastAccessed": 1775798655166,
+      "accessCount": 5,
+      "lastAccessed": 1776041474298,
       "type": "file"
     },
     {
-      "path": "src/utils/highlight.jsx",
-      "accessCount": 1,
-      "lastAccessed": 1775798655809,
-      "type": "file"
-    },
-    {
-      "path": "src/components/Profile.jsx",
-      "accessCount": 1,
-      "lastAccessed": 1775798661900,
-      "type": "file"
-    },
-    {
-      "path": "src/components/Experience.jsx",
-      "accessCount": 1,
-      "lastAccessed": 1775798662602,
+      "path": "src/styles/global.css",
+      "accessCount": 5,
+      "lastAccessed": 1776041505794,
       "type": "file"
     },
     {
       "path": "src/components/Projects.jsx",
-      "accessCount": 1,
-      "lastAccessed": 1775798666811,
+      "accessCount": 5,
+      "lastAccessed": 1776041665913,
       "type": "file"
     },
     {
-      "path": "src/components/Skills.jsx",
-      "accessCount": 1,
-      "lastAccessed": 1775798667838,
+      "path": "index.html",
+      "accessCount": 2,
+      "lastAccessed": 1776062143578,
       "type": "file"
     },
     {
-      "path": "src/components/Education.jsx",
+      "path": "",
       "accessCount": 1,
-      "lastAccessed": 1775798668338,
-      "type": "file"
-    },
-    {
-      "path": "src/data",
-      "accessCount": 1,
-      "lastAccessed": 1775798668649,
+      "lastAccessed": 1776061752775,
       "type": "directory"
-    },
-    {
-      "path": "src/App.css",
-      "accessCount": 1,
-      "lastAccessed": 1775798731297,
-      "type": "file"
-    },
-    {
-      "path": "package.json",
-      "accessCount": 1,
-      "lastAccessed": 1775800995038,
-      "type": "file"
     }
   ],
   "userDirectives": []
