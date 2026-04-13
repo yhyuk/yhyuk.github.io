@@ -10,7 +10,11 @@
       "Bash(cat /Users/imform-mm-2101/.claude/plugins/cache/thedotmack/claude-mem/*/package.json)",
       "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\('Total startups:', d.get\\('numStartups','N/A'\\)\\)\")",
       "WebFetch(domain:localhost)",
-      "Bash(curl -s http://localhost:5173)"
+      "Bash(curl -s http://localhost:5173)",
+      "Bash(lsof -ti:5173)",
+      "Bash(xargs kill:*)",
+      "Bash(lsof -ti:5174)",
+      "Bash(lsof -ti:5175)"
     ],
     "deny": [],
     "ask": []

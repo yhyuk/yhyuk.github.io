@@ -80,9 +80,7 @@ const Projects = () => {
           </div>
           <div className="project-company">{project.company}</div>
           <div className="project-tech">
-            {project.tech.map((t, i) => (
-              <span key={i}>{t}</span>
-            ))}
+            {project.tech.join(' · ')}
           </div>
           <p className="project-desc">{hl(project.description)}</p>
 
