@@ -6,16 +6,7 @@ const experiences = [
     period: '2025.01 - 현재',
     position: '시스템팀 · 백엔드, 프론트엔드',
     description: '웹 에이전시 · SI/SM 프로젝트',
-    achievements: [
-      '다수 고객사 웹 서비스 백엔드/프론트 유지보수 및 신규 요구사항 반영',
-      '`장애 재발 방지`를 위한 원인분석과 후속 조치 표준화',
-      '타사 인수인계 프로젝트 `전면 리팩토링` 주도',
-      '`API 스펙 문서화` 및 프로젝트 이슈 가이드 문서 작성',
-      '`SSL 인증서 자동 갱신` 시스템 구축으로 운영 효율화',
-      '백엔드 `코딩 컨벤션` 정립 및 팀 내 표준화 가이드 배포',
-      '`SonarQube` 도입으로 코드 품질 관리 체계 구축',
-      '레거시 프로젝트 현황 파악 및 운영/미운영 시스템 문서화'
-    ],
+    summary: '기아, 현대, 강남언니 등 다양한 고객사 프로젝트를 담당하며 신규 개발부터 유지보수까지 전 주기를 경험했습니다. 강남언니 위챗 미니프로그램 백엔드 시스템과 Medical CRM SaaS 플랫폼은 아키텍처 설계부터 외부 연동, 배포까지 혼자 주도한 프로젝트입니다. 새로운 기술이나 도구를 검증하고 빠르게 도입하는 것을 즐기며, 현재는 Claude Code를 업무 전반에 적극 활용해 설계 검토부터 코드 리뷰, 문서화까지 AI와 협업하는 방식으로 개발 생산성을 끌어올리고 있습니다.',
     tech: []
   },
   {
@@ -23,15 +14,7 @@ const experiences = [
     period: '2023.09 - 2024.12',
     position: '서버팀 · 백엔드',
     description: '건기식 커머스 서비스 회사',
-    achievements: [
-      '결제(KG이니시스), 본인인증(Danal, Popbill) 등 외부 서비스 연동 및 안정화',
-      '택배 추적, 안심번호, SMS 등 운영 필수 서비스 통합',
-      'OAuth 기반 SNS 로그인(Kakao, Naver, Facebook, Apple) 인증 시스템 구현',
-      '`Dev/Stg/Prod` 서버 아키텍처 구성 및 배포 파이프라인 설계',
-      '`와탭` 모니터링으로 슬로우쿼리 분석 및 최적화 (`3s → 1s`)',
-      '커머스 전 영역 `DB 초기 설계`',
-      '`AWS EC2 → ECS` 전환으로 리소스 효율 및 비용 절감'
-    ],
+    summary: '건기식 커머스 서비스에서 팀과 함께 DB 설계부터 외부 결제 연동, 인프라 전환까지 end-to-end로 담당했습니다. 트래픽 규모가 크지 않았지만, 커머스 도메인 전반의 흐름을 처음부터 끝까지 직접 설계하고 운영하면서 실제 서비스가 돌아가는 구조를 체득했습니다.',
     tech: []
   },
   {
@@ -39,11 +22,8 @@ const experiences = [
     period: '2023.05 - 2023.09',
     position: '백엔드, 프론트엔드',
     description: '외주 프로젝트',
-    achievements: [
-      '백오피스 데이터 가공 및 API 개발',
-      '인프라 구축 및 배포환경 구성',
-      '레거시 개편 및 서비스 장애 대응'
-    ],
+    summary: '짧은 기간이었지만 기획 해석부터 배포까지 혼자 전 과정을 수행하며 자기 주도적으로 일하는 방식을 체득했습니다.',
+
     tech: []
   },
   {
@@ -51,13 +31,7 @@ const experiences = [
     period: '2021.09 - 2023.05',
     position: '서버팀 · 백엔드, 프론트엔드',
     description: '웹 에이전시 · SI 프로젝트',
-    achievements: [
-      'RESTful API 설계 및 공통 응답 구조 표준화로 개발 생산성 및 유지보수성 개선',
-      '인프라 구축, API 개발 및 프론트엔드 신규 서비스 개발',
-      '배포 과정에서 발생하는 이슈 해결 및 안정화 작업 수행',
-      '`nGrinder` 성능테스트 도입으로 `SQL 튜닝` 및 코드 개선',
-      '레거시 개편 및 서비스 장애 대응'
-    ],
+    summary: '개발자로서 처음 일을 시작한 곳으로, 백엔드부터 데이터베이스, 클라우드, 프론트엔드까지 경계 없이 폭넓게 경험했습니다. 한 영역에 갇히지 않고 다양한 레이어를 접하다 보니 시스템 전체를 보는 시야가 생겼고, 지금도 문제를 볼 때 특정 계층에 국한하지 않고 전체 흐름에서 원인을 찾는 습관이 여기서 만들어졌습니다.',
     tech: []
   }
 ];
@@ -77,17 +51,7 @@ const Experience = () => {
             <div className="exp-period">{exp.period}</div>
           </div>
           <div className="exp-position">{exp.position}</div>
-          <div className="exp-desc">{exp.description}</div>
-          <ul className="exp-list">
-            {exp.achievements.map((item, i) => (
-              <li key={i}>{hl(item)}</li>
-            ))}
-          </ul>
-          <div className="exp-tech">
-            {exp.tech.map((t, i) => (
-              <span key={i}>{t}</span>
-            ))}
-          </div>
+          <p className="exp-summary">{hl(exp.summary)}</p>
         </div>
       ))}
       </div>
