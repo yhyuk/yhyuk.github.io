@@ -1,4 +1,5 @@
 import Profile from './components/Profile';
+import NavBar from './components/NavBar';
 import Experience from './components/Experience';
 import AiDevelopment from './components/AiDevelopment';
 import Projects from './components/Projects';
@@ -8,15 +9,18 @@ import './styles/global.css';
 
 function App() {
   return (
-    <div className="container">
-      <Profile />
-      <Experience />
-      <AiDevelopment />
-      <Projects />
-      <Skills />
-      <Education />
-      <div className="footer">Latest Updated 2026. 02. 10</div>
-    </div>
+    <>
+      <NavBar />
+      <div className="container">
+        <div id="intro"><Profile /></div>
+        <div id="experience"><Experience /></div>
+        <div id="ai"><AiDevelopment /></div>
+        <div id="projects"><Projects /></div>
+        <div id="skills"><Skills /></div>
+        <div id="education"><Education /></div>
+        <div className="footer">Latest Updated 2026. 02. 10</div>
+      </div>
+    </>
   );
 }
 
