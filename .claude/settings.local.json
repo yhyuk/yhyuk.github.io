@@ -15,7 +15,8 @@
       "Bash(xargs kill:*)",
       "Bash(lsof -ti:5174)",
       "Bash(lsof -ti:5175)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "Bash(node --check src/data/projectsData.js)"
     ],
     "deny": [],
     "ask": []
