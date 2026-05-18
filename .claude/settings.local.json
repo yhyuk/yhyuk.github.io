@@ -16,7 +16,9 @@
       "Bash(lsof -ti:5174)",
       "Bash(lsof -ti:5175)",
       "Bash(npm run:*)",
-      "Bash(node --check src/data/projectsData.js)"
+      "Bash(node --check src/data/projectsData.js)",
+      "Bash(open *)",
+      "WebFetch(domain:developers.weixin.qq.com)"
     ],
     "deny": [],
     "ask": []
