@@ -5,7 +5,7 @@ const Profile = () => {
   return (
     <div className="profile">
       <h1>김영혁</h1>
-      <div className="role">Full Stack Developer</div>
+      <div className="role">Software Engineer</div>
 
       <div className="intro">
         <p>
