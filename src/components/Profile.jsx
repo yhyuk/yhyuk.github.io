@@ -1,5 +1,6 @@
 import { MdEmail } from 'react-icons/md';
 import { FaGithub, FaLinkedin, FaBlog } from 'react-icons/fa';
+import { HiDownload } from 'react-icons/hi';
 
 const Profile = () => {
   return (
@@ -26,18 +27,30 @@ const Profile = () => {
         </p>
       </div>
 
-      <div className="contact-links">
-        <a href="mailto:yhyuk2841@gmail.com" title="Email">
-          <MdEmail />
-        </a>
-        <a href="https://github.com/yhyuk" target="_blank" rel="noopener noreferrer" title="GitHub">
-          <FaGithub />
-        </a>
-        <a href="https://www.linkedin.com/in/%EC%98%81%ED%98%81-%EA%B9%80-698062355/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-          <FaLinkedin />
-        </a>
-        <a href="https://kyhyuk.tistory.com/" target="_blank" rel="noopener noreferrer" title="Blog">
-          <FaBlog />
+      <div className="contact-row">
+        <div className="contact-links">
+          <a href="mailto:yhyuk2841@gmail.com" title="Email">
+            <MdEmail />
+          </a>
+          <a href="https://github.com/yhyuk" target="_blank" rel="noopener noreferrer" title="GitHub">
+            <FaGithub />
+          </a>
+          <a href="https://www.linkedin.com/in/%EC%98%81%ED%98%81-%EA%B9%80-698062355/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+            <FaLinkedin />
+          </a>
+          <a href="https://kyhyuk.tistory.com/" target="_blank" rel="noopener noreferrer" title="Blog">
+            <FaBlog />
+          </a>
+        </div>
+
+        <a
+          className="resume-download"
+          href={`${import.meta.env.BASE_URL}Resume.pdf`}
+          download="김영혁_Resume.pdf"
+          title="이력서 다운로드"
+        >
+          <HiDownload />
+          <span>Resume</span>
         </a>
       </div>
     </div>

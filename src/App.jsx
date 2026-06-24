@@ -18,7 +18,7 @@ function App() {
         <div id="projects"><Projects /></div>
         <div id="skills"><Skills /></div>
         <div id="education"><Education /></div>
-        <div className="footer">Latest Updated 2026. 04. 13</div>
+        <div className="footer">Latest Updated 2026. 06. 24</div>
       </div>
     </>
   );

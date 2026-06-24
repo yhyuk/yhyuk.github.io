@@ -1,14 +1,49 @@
 export const projectsData = [
   // 2026
   {
+    id: 'yeoshin',
+    year: '2026',
+    type: ['new'],
+    title: '여신티켓 M.P 서비스',
+    subtitle: 'WeChat 미니프로그램 백엔드 API 시스템',
+    company: '아이엠폼 (IMFORM)',
+    period: '2026.05 - 진행 중',
+    description: '여신티켓 서비스를 중국 시장에 진출시키기 위한 위챗 미니프로그램 백엔드 시스템을 설계 및 구축했습니다. `멀티 모듈 아키텍처`로 사용자 트래픽 처리, 외부 API 중계, 사용자 행동 수집을 모듈별로 분리해 운영하며, 회원 가입/탈퇴 등 핵심 액션은 `여신티켓 파트너 API`와 연동하고, `IMFORM 자체 회원 DB`를 운영합니다. 인증은 자체 발급 `Stateless JWT` 기반으로 구현했습니다.',
+    tech: ['Java 21', 'Spring Boot 3.3', 'Gradle', 'MySQL', 'Spring Data JPA', 'QueryDSL', 'WebFlux', 'JWT', 'Flyway', 'Docker', 'Prometheus', 'WeChat API', 'Amplitude'],
+    role: [
+      '멀티 모듈 아키텍처 설계 (User/Proxy/Tracking) 및 모듈별 독립 배포 환경 구성',
+      'WeChat 로그인 + IMFORM 자체 발급 `Stateless JWT` 인증 설계 (`@NoAuth` 기반 인터셉터 인가)',
+      '사용자 API 개발 (계정/병원/이벤트/리뷰/스크랩, `QueryDSL` 동적 쿼리)',
+      '`api-proxy` 게이트웨이 개발로 여신티켓 파트너 API 및 `Amplitude` 외부 연동 전담 중계',
+      '`api-tracking` 사용자 행동 이벤트 수집기 개발 (api-proxy 경유 Amplitude 릴레이)',
+      '`Flyway` 마이그레이션 기반 스키마 관리 및 `한국/중국 멀티 리전` Docker 배포 구성'
+    ],
+    achievement: [
+      '`User/Proxy/Tracking` 3개 모듈 단방향 의존 구조로 미니프로그램 트래픽 처리 / 외부 중계 / 행동 수집 책임 분리',
+      '`Stateless JWT` 인증 도입으로 Redis 등 세션 저장소 없이 무상태 인증 체계 구축',
+      '`api-proxy` 단일 게이트웨이로 여신티켓 파트너 API와 Amplitude 호출을 한국 리전에 집중, 중국 리전 모듈은 중계만 담당하도록 분리',
+      '`Flyway` 기반 마이그레이션 자동화로 스키마 변경 이력 관리 및 배포 순서 통제 (api-user 선기동 후 tracking 기동)'
+    ],
+    paar: [
+      {
+        title: '멀티 모듈 + Stateless JWT 기반 미니프로그램 백엔드 설계',
+        problem: '여신티켓 미니프로그램을 중국 시장에 출시하기 위한 백엔드를 설계해야 했다. 미니프로그램 사용자 트래픽은 중국 리전에서 받아야 했지만, 여신티켓 파트너 API와 Amplitude 같은 외부 연동은 한국 리전에서 호출하는 것이 안정적이었다. 또한 IMFORM 자체 회원 DB를 운영하면서 인증 체계를 어떻게 둘지 결정해야 했다.',
+        analyze: '구조 측면에서 `단일 모듈`은 빠르게 만들 수 있지만 트래픽 수신·외부 중계·행동 수집 책임이 한 곳에 섞여 리전 분리 배포가 어려웠다. `멀티 모듈 분리`는 초기 설계 비용이 들지만 책임별 독립 배포가 가능했다. 인증은 `Redis 세션 기반`이 토큰 무효화에 유리하지만 세션 저장소 인프라 종속이 생겼고, `Stateless JWT`는 별도 저장소 없이 무상태로 동작해 리전 분리 환경에서 인프라를 단순하게 유지할 수 있었다.',
+        action: '책임 분리와 리전별 독립 배포를 우선해 `User/Proxy/Tracking 멀티 모듈`로 설계했다. 외부 연동(여신티켓 파트너 API, Amplitude)은 `api-proxy` 게이트웨이로 모아 한국 리전에 배치하고, 미니프로그램 요청을 직접 받는 api-user/api-tracking은 중국 리전에 두어 외부 호출은 proxy를 경유하도록 했다. 인증은 `Stateless JWT`를 선택했다. 대신 `세션 기반이 주는 즉시 토큰 무효화 능력은 포기`했고, 토큰 탈취 시 만료 전까지 유효한 리스크를 감수했다. 이렇게 판단한 이유는 리전이 분리된 환경에서 세션 저장소를 공유하면 인프라 복잡도와 지연이 커졌고, 미니프로그램 특성상 짧은 만료 + 갱신 토큰으로 리스크를 통제 가능하다고 봤기 때문이다. DB(MySQL/Flyway)는 api-user만 사용하고 proxy/tracking은 무상태 중계로 두어 모듈 간 단방향 의존을 강제했다.',
+        result: '미니프로그램 트래픽 처리 / 외부 중계 / 행동 수집을 3개 모듈로 분리해 리전별 독립 배포가 가능한 구조를 확보했다. Stateless JWT로 세션 저장소 없이 인증을 운영했고, api-proxy 단일 게이트웨이로 외부 연동 지점을 일원화해 중국 리전 모듈의 외부 의존을 최소화했다.'
+      }
+    ],
+    link: null
+  },
+  {
     id: 'medicrm',
     year: '2026',
     type: ['new'],
-    title: 'Medical CRM',
+    title: '포위드닥터',
     subtitle: '병의원 중국인 고객 유치를 위한 위챗 미니프로그램 기반 구독형 B2B SaaS',
     company: '아이엠폼 (IMFORM)',
     period: '2026.02 - 진행 중',
-    description: '병의원이 중국인 고객을 유치하기 위해 병원 안내, 시술 정보, 후기, 케이스 스터디를 제공하는 위챗 미니 프로그램을 템플릿 형태로 관리하고, 해당 미니 프로그램을 통해 중국인 회원의 가입과 상담 접수 기능을 제공하는 `Medical CRM`을 개발하여 `구독형 B2B SaaS` 솔루션으로 제공합니다.',
+    description: '병의원이 중국인 고객을 유치하기 위해 병원 안내, 시술 정보, 후기, 케이스 스터디를 제공하는 위챗 미니 프로그램을 템플릿 형태로 관리하고, 해당 미니 프로그램을 통해 중국인 회원의 가입과 상담 접수 기능을 제공하는 `포위드닥터`를 개발하여 `구독형 B2B SaaS` 솔루션으로 제공합니다.',
     tech: ['Java 21', 'Spring Boot 3.3', 'Spring Security', 'JPA', 'QueryDSL', 'WebFlux', 'MySQL', 'Redis', 'Docker', 'WeChat API', 'Paystory'],
     role: [
       '멀티 테넌트 기반 CRM 플랫폼 설계 및 7개 모듈 멀티 모듈 아키텍처 구현 (`Row-level 데이터 격리`)',

@@ -80,8 +80,16 @@ code {
   margin-bottom: 0;
 }
 
-.contact-links {
+.contact-row {
   margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.contact-links {
   display: flex;
   gap: 16px;
 }
@@ -96,6 +104,32 @@ code {
 
 .contact-links a:hover {
   color: var(--text-primary);
+}
+
+.resume-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  color: var(--text-secondary);
+  background: var(--bg-primary);
+  border: 1.5px solid #ddd;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.resume-download:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--bg-light);
+}
+
+.resume-download svg {
+  font-size: 16px;
 }
 
 /* ── NavBar ── */
