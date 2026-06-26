@@ -23,3 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 .omc
+
+# 작업용 HTML 목업 (레이아웃 비교)
+mockup/

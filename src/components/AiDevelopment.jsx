@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { hl } from '../utils/highlight';
 
 const plugins = [
@@ -82,6 +83,38 @@ const aiItems = [
   }
 ];
 
+const WorkflowItem = ({ item, index }) => {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div className={`ai-item ${open ? 'open' : ''}`}>
+      <div className="ai-item-number">{String(index + 1).padStart(2, '0')}</div>
+      <div className="ai-item-content">
+        <button className="ai-item-head" onClick={() => setOpen(!open)}>
+          <div className="ai-item-title">{item.title}</div>
+          <span className="ai-item-icon">{open ? '▲' : '▼'}</span>
+        </button>
+        <p className="ai-item-desc">{hl(item.description)}</p>
+
+        {open && (
+          <>
+            <ul className="ai-item-list">
+              {item.details.map((d, j) => (
+                <li key={j}>{hl(d)}</li>
+              ))}
+            </ul>
+            <div className="ai-item-tags">
+              {item.tags.map((tag, j) => (
+                <span key={j}>{tag}</span>
+              ))}
+            </div>
+          </>
+        )}
+      </div>
+    </div>
+  );
+};
+
 const AiDevelopment = () => {
   return (
     <div className="section">
@@ -102,25 +135,16 @@ const AiDevelopment = () => {
           <div key={i} className="ai-plugin">
             <div className="ai-plugin-header">
               <div className="ai-plugin-name">{plugin.name}</div>
-              <span className="ai-plugin-tech">{plugin.tech}</span>
-            </div>
-            <p className="ai-plugin-desc">{hl(plugin.description)}</p>
-            <p className="ai-plugin-detail">{plugin.detail}</p>
-            <div className="ai-plugin-footer">
-              <div className="ai-plugin-tags">
-                {plugin.tags.map((tag, j) => (
-                  <span key={j}>{tag}</span>
-                ))}
-              </div>
               <a
                 href={plugin.github}
                 className="ai-plugin-link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                GitHub &rarr;
+                Github &rarr;
               </a>
             </div>
+            <p className="ai-plugin-desc">{hl(plugin.description)}</p>
           </div>
         ))}
       </div>
@@ -128,23 +152,7 @@ const AiDevelopment = () => {
       <h3 className="ai-subtitle">Development Workflow</h3>
       <div className="ai-items">
         {aiItems.map((item, i) => (
-          <div key={i} className="ai-item">
-            <div className="ai-item-number">{String(i + 1).padStart(2, '0')}</div>
-            <div className="ai-item-content">
-              <div className="ai-item-title">{item.title}</div>
-              <p className="ai-item-desc">{hl(item.description)}</p>
-              <ul className="ai-item-list">
-                {item.details.map((d, j) => (
-                  <li key={j}>{hl(d)}</li>
-                ))}
-              </ul>
-              <div className="ai-item-tags">
-                {item.tags.map((tag, j) => (
-                  <span key={j}>{tag}</span>
-                ))}
-              </div>
-            </div>
-          </div>
+          <WorkflowItem key={i} item={item} index={i} />
         ))}
       </div>
     </div>

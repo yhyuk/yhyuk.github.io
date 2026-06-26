@@ -1,27 +1,23 @@
 const skillsData = [
   {
     category: 'Backend',
-    items: 'Java, Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Spring Data Redis, Spring WebFlux, QueryDSL, MyBatis, Node.js, Loopback'
+    items: ['Java', 'Spring Boot', 'JPA / QueryDSL', 'Node.js']
   },
   {
     category: 'Frontend',
-    items: 'React, Next.js, Nuxt.js, Vue.js, TypeScript, HTML/CSS, Thymeleaf'
+    items: ['React', 'Next.js', 'Vue / Nuxt', 'TypeScript']
   },
   {
     category: 'Database',
-    items: 'MySQL, MariaDB, Redis, MongoDB, MSSQL Server, Oracle, H2'
+    items: ['MySQL', 'Redis', 'MongoDB', 'MSSQL']
   },
   {
     category: 'Cloud & Infrastructure',
-    items: 'AWS EC2, AWS ECS, AWS S3, AWS RDS, AWS CloudFront, AWS Lightsail, AWS Amplify, Tencent Cloud CLB, Tencent Cloud COS, Tencent Cloud TDSQL, Tencent Cloud CVM, Docker, Nginx'
+    items: ['AWS', 'Tencent Cloud', 'Docker', 'Nginx']
   },
   {
     category: 'DevOps & Monitoring',
-    items: 'Prometheus, Grafana, Whatap, k6, nGrinder, SonarQube, Jenkins, Flyway'
-  },
-  {
-    category: 'Tools',
-    items: 'Git, GitHub, Bitbucket, GitLab, Jira, Postman, Swagger'
+    items: ['Prometheus / Grafana', 'k6 / nGrinder', 'SonarQube', 'Flyway']
   }
 ];
 
@@ -37,7 +33,7 @@ const Skills = () => {
         <div key={index} className="skill-item">
           <div className="skill-category">{skill.category}</div>
           <div className="skill-items">
-            {skill.items.split(', ').map((item, i) => (
+            {skill.items.map((item, i) => (
               <span key={i} className="skill-tag">{item}</span>
             ))}
           </div>

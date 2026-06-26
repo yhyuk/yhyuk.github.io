@@ -6,7 +6,7 @@ export const projectsData = [
     type: ['new'],
     title: '여신티켓 M.P 서비스',
     subtitle: 'WeChat 미니프로그램 백엔드 API 시스템',
-    company: '아이엠폼 (IMFORM)',
+    company: '패스트레인 (Fastlane)',
     period: '2026.05 - 진행 중',
     description: '여신티켓 서비스를 중국 시장에 진출시키기 위한 위챗 미니프로그램 백엔드 시스템을 설계 및 구축했습니다. `멀티 모듈 아키텍처`로 사용자 트래픽 처리, 외부 API 중계, 사용자 행동 수집을 모듈별로 분리해 운영하며, 회원 가입/탈퇴 등 핵심 액션은 `여신티켓 파트너 API`와 연동하고, `IMFORM 자체 회원 DB`를 운영합니다. 인증은 자체 발급 `Stateless JWT` 기반으로 구현했습니다.',
     tech: ['Java 21', 'Spring Boot 3.3', 'Gradle', 'MySQL', 'Spring Data JPA', 'QueryDSL', 'WebFlux', 'JWT', 'Flyway', 'Docker', 'Prometheus', 'WeChat API', 'Amplitude'],
@@ -37,6 +37,7 @@ export const projectsData = [
   },
   {
     id: 'medicrm',
+    featured: true,
     year: '2026',
     type: ['new'],
     title: '포위드닥터',
@@ -73,12 +74,13 @@ export const projectsData = [
   },
   {
     id: 'gangnamunni',
+    featured: true,
     year: '2026',
     type: ['new'],
     title: '강남언니 M.P 서비스',
     subtitle: 'WeChat 미니프로그램 백엔드 API 시스템',
     company: '힐링페이퍼 (Healing Paper)',
-    period: '2025.11 - 진행 중',
+    period: '2025.11 ~ 2026.05',
     description: '강남언니 서비스를 중국 시장에 진출시키기 위한 위챗 미니프로그램 백엔드 시스템을 설계 및 구축했습니다. `멀티 모듈 아키텍처`를 통해 병원/이벤트 정보 제공, 상담 신청, `실시간 데이터 동기화`, 사용자 행동 트래킹 등 전체 생명주기를 관리하며, 한국-중국 간 실시간 데이터 동기화 및 `인증/트래킹 시스템`을 구현했습니다.',
     tech: ['Java 21', 'Spring Boot', 'Gradle', 'MySQL', 'Spring Data JPA', 'Redis', 'Spring WebFlux', 'Docker', 'Prometheus', 'Grafana', 'TencentCloud'],
     role: [
@@ -141,6 +143,7 @@ export const projectsData = [
   },
   {
     id: 'hyundai',
+    featured: true,
     year: '2025',
     type: ['maintain', 'enhance'],
     title: 'H.M.P (Hyundai Mobility Passport)',
