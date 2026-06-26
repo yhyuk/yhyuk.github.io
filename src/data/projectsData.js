@@ -1,5 +1,4 @@
 export const projectsData = [
-  // 2026
   {
     id: 'yeoshin',
     year: '2026',
@@ -44,7 +43,7 @@ export const projectsData = [
     subtitle: '병의원 중국인 고객 유치를 위한 위챗 미니프로그램 기반 구독형 B2B SaaS',
     company: '아이엠폼 (IMFORM)',
     period: '2026.02 - 진행 중',
-    description: '병의원이 중국인 고객을 유치하기 위해 병원 안내, 시술 정보, 후기, 케이스 스터디를 제공하는 위챗 미니 프로그램을 템플릿 형태로 관리하고, 해당 미니 프로그램을 통해 중국인 회원의 가입과 상담 접수 기능을 제공하는 `포위드닥터`를 개발하여 `구독형 B2B SaaS` 솔루션으로 제공합니다.',
+    description: '성형외과·피부과·치과·한의원 등 `다수의 병의원이 입점`하는 위챗 미니프로그램 기반 `구독형 B2B SaaS`입니다. 입점 병원별로 병원 안내, 시술 정보, 후기, 케이스 스터디를 담은 미니프로그램을 `템플릿 형태`로 제공하고, 이를 통해 중국인 회원 가입과 상담 접수를 처리하는 `포위드닥터`를 개발했습니다.',
     tech: ['Java 21', 'Spring Boot 3.3', 'Spring Security', 'JPA', 'QueryDSL', 'WebFlux', 'MySQL', 'Redis', 'Docker', 'WeChat API', 'Paystory'],
     role: [
       '멀티 테넌트 기반 CRM 플랫폼 설계 및 7개 모듈 멀티 모듈 아키텍처 구현 (`Row-level 데이터 격리`)',
@@ -55,7 +54,7 @@ export const projectsData = [
     ],
     achievement: [
       '7개 모듈, 29개 테이블, `70+ API 엔드포인트` 규모의 SaaS 플랫폼 구축',
-      '`Row-level 멀티 테넌시` 설계로 병원별 독립 CRM 환경 제공, `버전 기반 기능 제어`로 테넌트별 차등 서비스 구현',
+      '`Row-level 멀티 테넌시` 설계로 `20개 이상 입점 병의원`에 병원별 독립 CRM 환경 제공, `버전 기반 기능 제어`로 테넌트별 차등 서비스 구현',
       '`WeChat 미니프로그램 API` 연동: 중국인 고객 회원가입/상담신청 플로우 구현, 방문 통계 자동 수집 스케줄러(`하루 3회`) 운영',
       '구독 결제 전 주기 자동화: 요금제 정의 → 청구서 자동 발행(월간) → 빌링키 자동 결제(일간) → 환불 처리까지 `Paystory` 결제 게이트웨이 연동',
       '`Flyway` 마이그레이션, `SonarQube` 도입으로 코드 품질 관리 체계 확립',
@@ -107,7 +106,6 @@ export const projectsData = [
     ],
     link: null
   },
-  // 2025
   {
     id: 'kia80',
     year: '2025',
@@ -178,37 +176,6 @@ export const projectsData = [
     link: 'https://www.hyundai.com/jp/hyundai-mobility-passport/in-okinawa'
   },
   {
-    id: 'miniprogram',
-    year: '2025',
-    type: ['maintain', 'enhance'],
-    title: '미니파이 (MINIPIE)',
-    subtitle: 'K-POP 음반사 통합 커머스 위챗 미니프로그램 플랫폼',
-    company: '위버스, 사운드웨이브, 메이크스타, 스타원',
-    period: '2025.01 - 진행 중',
-    description: '다수의 음반사가 입점한 중국 시장 대상 K-POP 커머스 플랫폼입니다. `Node.js 기반의 MSA` 구조로 설계되어 있으며, 각 입점사별 독립적인 상품 관리, 주문 처리, 결제, 배송, 통계 분석 기능을 제공합니다. 기존 `레거시 시스템`을 인수인계 받아 유지보수, 성능 개선, 신규 기능 개발을 수행했습니다.',
-    tech: ['Node.js', 'Loopback', 'PM2', 'MongoDB', 'Redis', 'React', 'TypeScript', 'TencentCloud'],
-    role: [
-      '`MSA 리포지토리 정리 및 문서화` (사용/미사용 프로젝트 구분, 프로젝트별 README 작성, 아키텍처 다이어그램 작성)',
-      '`pm2 로그 체계 개선` (access/error 분리, 로깅 템플릿 도입, logrotate + 보관 기간 기반 자동 삭제)',
-      '`WeChat 방문 통계 스케줄러` 장애 대응 및 복구 스크립트 정비'
-    ],
-    achievement: [
-      '인수인계 시 파악 불가했던 MSA 구조를 `사용 중 / 미사용 리포지토리`로 분류하고 다이어그램·README로 정리해 신규 합류자가 즉시 맥락을 파악할 수 있도록 개선',
-      '로그 파일이 서버 디스크의 `약 80~90%`를 차지하던 문제를 해소하여 디스크 사용률 `약 20~30%`대로 안정화',
-      '`WeChat API` 응답 이상 및 외부 인증 서버 변경으로 인한 통계 누락을 탐지·복구하여 입점사 대시보드 데이터 신뢰도 확보'
-    ],
-    paar: [
-      {
-        title: 'pm2 로그 체계 개선으로 디스크 포화 이슈 해소',
-        problem: '미니파이 서버는 pm2로 배포·운영되고 있었는데, 모든 로그가 단일 파일에 쌓이는 구조였고 길이가 긴 토큰 문자열까지 무분별하게 기록되고 있었다. 별도의 보관 기간 정책이나 삭제 스케줄도 없어 로그 파일만으로 서버 디스크의 약 80~90%가 찼고, 주기적으로 수기 삭제해야만 서비스가 유지되는 상태였다. 디스크가 차면 서비스 장애로 이어질 위험이 상시로 존재했다.',
-        analyze: '선택지는 세 가지였다. `수기 삭제 주기화`는 가장 빠르지만 근본 원인을 그대로 두는 방식이었다. `외부 로그 수집 시스템(ELK 등) 도입`은 가시성 측면에서 이상적이지만 인프라 비용과 구축 공수가 컸고, 유지보수 성격의 작업 범위를 넘어섰다. `pm2-logrotate + 로깅 템플릿 정비`는 기존 스택 안에서 해결 가능하면서 access/error 분리, 민감 정보 제거, 자동 보존 기간 적용이 가능했다.',
-        action: '유지보수 범위에 맞는 `pm2-logrotate 적용` 방식을 선택했다. 대신 `외부 로그 시스템이 제공하는 중앙 집중 가시성과 검색 편의성은 포기`했고, 로그 분석이 필요할 때 서버별로 접근해야 하는 불편을 감수했다. 로그를 `access / error`로 분리하고 토큰 등 길이가 긴 필드를 마스킹하는 로깅 템플릿을 별도로 구성해 가독성과 디스크 부담을 동시에 낮췄으며, 보관 기간을 넘은 로그는 `logback.sh` cron으로 자동 삭제되도록 정비했다. 운영 중 서버에 설정을 직접 반영해야 했기에 한 서버씩 점검·적용하는 방식으로 장애 리스크를 최소화했다.',
-        result: '공용 서버 기준 디스크 사용률이 `89% → 30%`, `91% → 23%`로 안정화됐고, 수기 삭제 작업이 사라졌다. access/error 분리와 템플릿 정비로 장애 발생 시 원인 파악 속도도 함께 개선됐다.'
-      }
-    ],
-    link: 'https://miniprogram.co.kr'
-  },
-  {
     id: 'archery',
     year: '2025',
     type: ['maintain', 'enhance'],
@@ -248,29 +215,6 @@ export const projectsData = [
     link: 'https://www.archery.or.kr'
   },
   {
-    id: 'savezone',
-    year: '2025',
-    type: ['maintain'],
-    title: '세이브존 공식 홈페이지',
-    subtitle: '세이브존 회원·매장 통합 관리 플랫폼',
-    company: '세이브존(Savezone)',
-    period: '2025.01 - 진행 중',
-    description: '세이브존은 대형마트/할인점을 운영하는 유통 기업의 공식 홈페이지로, 회원 관리, 매장 안내, 이벤트 운영 등을 통합적으로 관리하는 플랫폼입니다. `마이크로서비스 아키텍처`로 설계되어 인증, 고객 관리, 주문 처리, 이벤트 관리 등이 독립적으로 운영됩니다.',
-    tech: ['Node.js', 'Loopback', 'MongoDB', 'PM2', 'React', 'TypeScript', 'AWS'],
-    role: [
-      '`카카오 CI 누락` 회원 복구 (배치 조회 → 카카오 사용자 확인 → 아이엠폼/세이브존 DB 동기 수정)',
-      '신규 회원 CI 누락 방지 (`JS SDK → REST API` 전환, CI Update 로직 추가, `crontab` 새벽 자동 보정)',
-      'PC/모바일/앱 `로그인 전체 개편` 후 일반/소셜 로그인 이슈 확인 및 버그 수정',
-      '지점별 영업시간·카탈로그 데이터 `MongoDB` 직접 운영 관리'
-    ],
-    achievement: [
-      '카카오 CI 누락 회원 `약 26,000명` 복구 완료 및 데이터 무결성 확보',
-      '`JS SDK → REST API` 전환 + `crontab` 자동 보정으로 신규 CI 누락 `재발 방지`',
-      'PC/모바일/앱 로그인 전체 개편 후 크로스 플랫폼 로그인 안정성 확보'
-    ],
-    link: 'https://esavezone.co.kr'
-  },
-  {
     id: 'savezone-event',
     year: '2025',
     type: ['new'],
@@ -301,6 +245,60 @@ export const projectsData = [
       }
     ],
     link: 'https://esavezone.co.kr/event-progress'
+  },
+  {
+    id: 'miniprogram',
+    year: '2025',
+    type: ['maintain', 'enhance'],
+    title: '미니파이 (MINIPIE)',
+    subtitle: 'K-POP 음반사 통합 커머스 위챗 미니프로그램 플랫폼',
+    company: '위버스, 사운드웨이브, 메이크스타, 스타원',
+    period: '2025.01 - 진행 중',
+    description: '다수의 음반사가 입점한 중국 시장 대상 K-POP 커머스 플랫폼입니다. `Node.js 기반의 MSA` 구조로 설계되어 있으며, 각 입점사별 독립적인 상품 관리, 주문 처리, 결제, 배송, 통계 분석 기능을 제공합니다. 기존 `레거시 시스템`을 인수인계 받아 유지보수, 성능 개선, 신규 기능 개발을 수행했습니다.',
+    tech: ['Node.js', 'Loopback', 'PM2', 'MongoDB', 'Redis', 'React', 'TypeScript', 'TencentCloud'],
+    role: [
+      '`MSA 리포지토리 정리 및 문서화` (사용/미사용 프로젝트 구분, 프로젝트별 README 작성, 아키텍처 다이어그램 작성)',
+      '`pm2 로그 체계 개선` (access/error 분리, 로깅 템플릿 도입, logrotate + 보관 기간 기반 자동 삭제)',
+      '`WeChat 방문 통계 스케줄러` 장애 대응 및 복구 스크립트 정비'
+    ],
+    achievement: [
+      '인수인계 시 파악 불가했던 MSA 구조를 `사용 중 / 미사용 리포지토리`로 분류하고 다이어그램·README로 정리해 신규 합류자가 즉시 맥락을 파악할 수 있도록 개선',
+      '로그 파일이 서버 디스크의 `약 80~90%`를 차지하던 문제를 해소하여 디스크 사용률 `약 20~30%`대로 안정화',
+      '`WeChat API` 응답 이상 및 외부 인증 서버 변경으로 인한 통계 누락을 탐지·복구하여 입점사 대시보드 데이터 신뢰도 확보'
+    ],
+    paar: [
+      {
+        title: 'pm2 로그 체계 개선으로 디스크 포화 이슈 해소',
+        problem: '미니파이 서버는 pm2로 배포·운영되고 있었는데, 모든 로그가 단일 파일에 쌓이는 구조였고 길이가 긴 토큰 문자열까지 무분별하게 기록되고 있었다. 별도의 보관 기간 정책이나 삭제 스케줄도 없어 로그 파일만으로 서버 디스크의 약 80~90%가 찼고, 주기적으로 수기 삭제해야만 서비스가 유지되는 상태였다. 디스크가 차면 서비스 장애로 이어질 위험이 상시로 존재했다.',
+        analyze: '선택지는 세 가지였다. `수기 삭제 주기화`는 가장 빠르지만 근본 원인을 그대로 두는 방식이었다. `외부 로그 수집 시스템(ELK 등) 도입`은 가시성 측면에서 이상적이지만 인프라 비용과 구축 공수가 컸고, 유지보수 성격의 작업 범위를 넘어섰다. `pm2-logrotate + 로깅 템플릿 정비`는 기존 스택 안에서 해결 가능하면서 access/error 분리, 민감 정보 제거, 자동 보존 기간 적용이 가능했다.',
+        action: '유지보수 범위에 맞는 `pm2-logrotate 적용` 방식을 선택했다. 대신 `외부 로그 시스템이 제공하는 중앙 집중 가시성과 검색 편의성은 포기`했고, 로그 분석이 필요할 때 서버별로 접근해야 하는 불편을 감수했다. 로그를 `access / error`로 분리하고 토큰 등 길이가 긴 필드를 마스킹하는 로깅 템플릿을 별도로 구성해 가독성과 디스크 부담을 동시에 낮췄으며, 보관 기간을 넘은 로그는 `logback.sh` cron으로 자동 삭제되도록 정비했다. 운영 중 서버에 설정을 직접 반영해야 했기에 한 서버씩 점검·적용하는 방식으로 장애 리스크를 최소화했다.',
+        result: '공용 서버 기준 디스크 사용률이 `89% → 30%`, `91% → 23%`로 안정화됐고, 수기 삭제 작업이 사라졌다. access/error 분리와 템플릿 정비로 장애 발생 시 원인 파악 속도도 함께 개선됐다.'
+      }
+    ],
+    link: 'https://miniprogram.co.kr'
+  },
+  {
+    id: 'savezone',
+    year: '2025',
+    type: ['maintain'],
+    title: '세이브존 공식 홈페이지',
+    subtitle: '세이브존 회원·매장 통합 관리 플랫폼',
+    company: '세이브존(Savezone)',
+    period: '2025.01 - 진행 중',
+    description: '세이브존은 대형마트/할인점을 운영하는 유통 기업의 공식 홈페이지로, 회원 관리, 매장 안내, 이벤트 운영 등을 통합적으로 관리하는 플랫폼입니다. `마이크로서비스 아키텍처`로 설계되어 인증, 고객 관리, 주문 처리, 이벤트 관리 등이 독립적으로 운영됩니다.',
+    tech: ['Node.js', 'Loopback', 'MongoDB', 'PM2', 'React', 'TypeScript', 'AWS'],
+    role: [
+      '`카카오 CI 누락` 회원 복구 (배치 조회 → 카카오 사용자 확인 → 아이엠폼/세이브존 DB 동기 수정)',
+      '신규 회원 CI 누락 방지 (`JS SDK → REST API` 전환, CI Update 로직 추가, `crontab` 새벽 자동 보정)',
+      'PC/모바일/앱 `로그인 전체 개편` 후 일반/소셜 로그인 이슈 확인 및 버그 수정',
+      '지점별 영업시간·카탈로그 데이터 `MongoDB` 직접 운영 관리'
+    ],
+    achievement: [
+      '카카오 CI 누락 회원 `약 26,000명` 복구 완료 및 데이터 무결성 확보',
+      '`JS SDK → REST API` 전환 + `crontab` 자동 보정으로 신규 CI 누락 `재발 방지`',
+      'PC/모바일/앱 로그인 전체 개편 후 크로스 플랫폼 로그인 안정성 확보'
+    ],
+    link: 'https://esavezone.co.kr'
   },
   {
     id: 'luckyhotto',
@@ -354,7 +352,6 @@ export const projectsData = [
     ],
     link: 'archived'
   },
-  // 2024
   {
     id: 'linme',
     year: '2024',
@@ -379,7 +376,6 @@ export const projectsData = [
     ],
     link: 'archived'
   },
-  // 2023
   {
     id: 'forloud',
     year: '2023',
@@ -428,7 +424,7 @@ export const projectsData = [
   },
   {
     id: 'unlike',
-    year: '2023',
+    year: '2022',
     type: ['new'],
     title: '언라이크 소개 페이지',
     subtitle: '브랜드 홍보 및 서비스 소개 웹사이트',
@@ -451,7 +447,7 @@ export const projectsData = [
   },
   {
     id: 'doldol',
-    year: '2023',
+    year: '2022',
     type: ['maintain', 'enhance'],
     title: '돌돌 화물 운송 서비스',
     subtitle: '위치 기반 실시간 화물 매칭 플랫폼',
@@ -473,10 +469,9 @@ export const projectsData = [
     ],
     link: 'https://doldol.net'
   },
-  // 2022
   {
     id: 'numo',
-    year: '2022',
+    year: '2021',
     type: ['new'],
     title: 'GPS 기반 실시간 트래킹 서비스',
     subtitle: '킥보드 사용자 위치 기반 트래킹 앱',
